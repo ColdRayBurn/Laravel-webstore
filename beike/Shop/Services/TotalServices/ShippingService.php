@@ -60,7 +60,7 @@ class ShippingService
     }
 
     /**
-     * 通过配送方式获取插件编码
+     *
      *
      * @param $shippingMethod
      * @return string

@@ -58,7 +58,7 @@ class CheckoutService
     }
 
     /**
-     * 更新结账页数据
+     *
      *
      * @param $requestData ['shipping_address_id'=>1, 'payment_address_id'=>2, 'shipping_method'=>'code', 'payment_method'=>'code']
      * @return array
@@ -104,7 +104,7 @@ class CheckoutService
     }
 
     /**
-     * 确认提交订单
+     *
      * @throws \Throwable
      */
     public function confirm(): Order
@@ -135,7 +135,7 @@ class CheckoutService
     }
 
     /**
-     * 计算当前选中商品总重量
+     *
      *
      * @return float
      */
@@ -237,7 +237,7 @@ class CheckoutService
     }
 
     /**
-     * 获取结账页数据
+     *
      *
      * @return array
      * @throws \Exception

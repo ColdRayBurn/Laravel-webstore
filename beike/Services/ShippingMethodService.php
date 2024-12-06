@@ -20,7 +20,7 @@ use Illuminate\Support\Str;
 class ShippingMethodService
 {
     /**
-     * 获取配送方式, 二维数组, 一个配送插件对应多个配送方式
+     * , ,
      *
      * @param CheckoutService $checkout
      * @return array
@@ -57,7 +57,7 @@ class ShippingMethodService
     }
 
     /**
-     * 获取配送方式, 二维数组, 一个配送插件对应多个配送方式
+     * , ,
      *
      * @param CheckoutService $checkout
      * @return array
@@ -74,7 +74,7 @@ class ShippingMethodService
     }
 
     /**
-     * 获取当前使用的配送方式
+     *
      *
      * @param $shipments
      * @param $methodCode

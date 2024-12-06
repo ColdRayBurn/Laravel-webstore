@@ -61,7 +61,7 @@
             <el-input size="mini" v-model="dialog.form.description[lang.code]" placeholder="{{ __('admin/region.describe') }}"><template slot="prepend">@{{lang.name}}</template></el-input>
           </el-form-item>
         </el-form-item>
-        
+
         @hookwrapper('admin.customer_group.dialog.from.discount_factor')
         <el-form-item label="{{ __('admin/customer_group.discount_rate') }}">
           <el-input class="mb-0" type="number" v-model="dialog.form.discount_factor" placeholder="{{ __('admin/customer_group.discount_rate') }}">
@@ -69,7 +69,7 @@
           </el-input>
         </el-form-item>
         @endhookwrapper
-        
+
         @if (0)
         <el-form-item label="{{ __('customer_group.level') }}">
           <el-input class="mb-0" v-model="dialog.form.level" placeholder="{{ __('customer_group.level') }}"></el-input>
@@ -124,16 +124,16 @@
             id: null,
             name: {},
             description: {},
-            total: '', //消费额度
+            total: '',
             level: '1',
-            discount_factor: '', // 折扣率
-            reward_point_factor: '', // 奖励积分系数使用积分系数
-            use_point_factor: '', // 使用积分系数
+            discount_factor: '',
+            reward_point_factor: '',
+            use_point_factor: '',
           },
         },
 
         rules: {
-          // password: [{required: true,message: '请输入密码',trigger: 'blur'}, ],
+
         }
       },
 
@@ -157,11 +157,11 @@
               id: group.id,
               name: {},
               description: {},
-              total: group.total, //消费额度
-              level: group.level, //消费额度
-              discount_factor: group.discount_factor, // 折扣率
-              reward_point_factor: group.reward_point_factor, // 奖励积分系数使用积分系数
-              use_point_factor: group.use_point_factor, // 使用积分系数
+              total: group.total,
+              level: group.level,
+              discount_factor: group.discount_factor,
+              reward_point_factor: group.reward_point_factor,
+              use_point_factor: group.use_point_factor,
               status: 1,
             }
 

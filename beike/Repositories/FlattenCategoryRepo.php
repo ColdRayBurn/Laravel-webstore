@@ -22,7 +22,7 @@ class FlattenCategoryRepo
     private static $allCategories = null;
 
     /**
-     * 将顶级分类ID和所有的子分类ID组合成一个数组
+     * IDID
      *
      * @param array $topCategoryIds
      * @param array $subCategoryIds
@@ -44,7 +44,7 @@ class FlattenCategoryRepo
     }
 
     /**
-     * 获取某些分类ID的所有子分类ID
+     * IDID
      *
      * @param array $categoryIds
      * @return array
@@ -84,7 +84,7 @@ class FlattenCategoryRepo
     }
 
     /**
-     * 获取某些分类下的子分类
+     *
      * @param $categoryIds
      * @return array
      */
@@ -196,7 +196,7 @@ class FlattenCategoryRepo
     }
 
     /**
-     * 获取某个分类ID的所有子分类ID
+     * IDID
      *
      * @param int   $categoryId
      * @param array $subCategoryIds
@@ -221,7 +221,7 @@ class FlattenCategoryRepo
     }
 
     /**
-     * 获取所有分类， 只包含category_id, parent_id
+     * ， category_id, parent_id
      * @return array
      */
     private static function getAllCategories(): array

@@ -402,7 +402,7 @@
       el: '#app',
 
       data: {
-        // statuses: [{"value":"pending","label":"待处理"},{"value":"rejected","label":"已拒绝"},{"value":"approved","label":"已批准（待顾客寄回商品）"},{"value":"shipped","label":"已发货（寄回商品）"},{"value":"completed","label":"已完成"}],
+
         statuses: @json($statuses ?? []),
         form: {
           status: "",

@@ -136,7 +136,7 @@
         }
       },
 
-      // 在挂载开始之前被调用:相关的 render 函数首次被调用
+
       beforeMount() {
         $http.get(`countries/${this.source.country_id}/zones`).then((res) => {
           this.dialog.zones = [

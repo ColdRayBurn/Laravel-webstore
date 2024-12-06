@@ -82,7 +82,7 @@ return [
     'move_down'                        => 'Move down',
     'move_up'                          => 'Move up',
 
-    // 固定连接
+
     'text_static_product_latest'       => 'Latest products',
     'text_static_product_special'      => 'Special products',
     'text_static_product_manufacturer' => 'Brand Zone',

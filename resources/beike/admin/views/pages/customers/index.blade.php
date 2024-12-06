@@ -234,7 +234,7 @@
           }).catch(()=>{})
         },
 
-        // 清空回收站
+
         checkedCustomerSclearRestore() {
           this.$confirm('{{ __('admin/product.confirm_delete_restore') }}', '{{ __('common.text_hint') }}', {
             confirmButtonText: '{{ __('common.confirm') }}',

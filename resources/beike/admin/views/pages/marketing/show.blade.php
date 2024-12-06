@@ -529,7 +529,7 @@ $data = $plugin['data'];
         this.callingCodes = this.source.callingCodes.filter(item => item.region_code.toLowerCase().includes(this.codeKeyword.toLowerCase()));
       },
 
-      // 根据 token 获取domain，然后判断返回的domain是否与当前域名一致
+
       checkDomain() {
         if (!this.setTokenDialog.token) {
           return;
@@ -740,7 +740,7 @@ $data = $plugin['data'];
               html: $('.code-pop').html(),
               showConfirmButton: false,
               didOpen: function () {
-                // 微信支付二维码 轮询监控支付状态
+
                 self.chekOrderStatus();
                 self.timer = window.setInterval(() => {
                   setTimeout(self.chekOrderStatus(), 0);

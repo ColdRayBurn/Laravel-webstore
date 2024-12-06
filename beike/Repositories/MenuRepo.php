@@ -15,7 +15,7 @@ namespace Beike\Repositories;
 class MenuRepo
 {
     /**
-     * 处理页头编辑器数据
+     *
      *
      * @return array|mixed
      * @throws \Exception
@@ -45,7 +45,7 @@ class MenuRepo
     }
 
     /**
-     * 处理头部 menu 子菜单数据
+     *  menu
      *
      * @param $childrenGroups
      * @return mixed

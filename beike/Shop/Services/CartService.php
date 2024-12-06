@@ -21,7 +21,7 @@ class CartService
     private static $cartList = null;
 
     /**
-     * 获取购物车商品列表
+     *
      *
      * @param      $customer
      * @param bool $selected
@@ -65,7 +65,7 @@ class CartService
     }
 
     /**
-     * 创建购物车或者更新购物车数量
+     *
      * @throws Exception
      */
     public static function add($sku, int $quantity, $customer = null)
@@ -112,7 +112,7 @@ class CartService
     }
 
     /**
-     * 选择购物车商品
+     *
      *
      * @param      $customer
      * @param      $cartIds
@@ -135,7 +135,7 @@ class CartService
     }
 
     /**
-     * 反选购物车商品
+     *
      *
      * @param $customer
      * @param $cartIds
@@ -154,7 +154,7 @@ class CartService
     }
 
     /**
-     * 更新购物车数量
+     *
      */
     public static function updateQuantity($customer, $cartId, $quantity): void
     {
@@ -171,7 +171,7 @@ class CartService
     }
 
     /**
-     * 删除购物车商品
+     *
      *
      * @param $customer
      * @param $cartId
@@ -192,7 +192,7 @@ class CartService
     }
 
     /**
-     * 获取购物车相关数据
+     *
      *
      * @param array $carts
      * @param null  $customer

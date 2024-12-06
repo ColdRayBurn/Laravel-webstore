@@ -73,7 +73,7 @@ class EnvironmentController extends BaseController
     }
 
     /**
-     * 数据库信息检测
+     *
      *
      * @param Request $request
      * @return JsonResponse|array

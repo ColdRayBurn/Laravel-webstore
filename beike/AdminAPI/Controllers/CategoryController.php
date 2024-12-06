@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 class CategoryController
 {
     /**
-     * 商品分类列表
+     *
      *
      * @return mixed
      */
@@ -37,7 +37,7 @@ class CategoryController
     }
 
     /**
-     * 单个商品分类
+     *
      *
      * @param Request  $request
      * @param Category $category
@@ -54,7 +54,7 @@ class CategoryController
     }
 
     /**
-     * 保存商品分类
+     *
      *
      * @param CategoryRequest $request
      * @return array
@@ -75,7 +75,7 @@ class CategoryController
     }
 
     /**
-     * 更新产品分类
+     *
      *
      * @param CategoryRequest $request
      * @param Category        $category
@@ -97,7 +97,7 @@ class CategoryController
     }
 
     /**
-     * 删除分类
+     *
      * @param Request  $request
      * @param Category $category
      * @return JsonResponse

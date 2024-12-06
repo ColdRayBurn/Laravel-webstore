@@ -51,13 +51,13 @@
         },
       },
       spaceBetween: 30,
-      // 如果需要分页器
+
       pagination: {
         el: '.module-bs-product-{{ $module_id }}-pagination',
         clickable: true,
       },
 
-      // 如果需要前进后退按钮
+
       navigation: {
         nextEl: '.product-bs-{{ $module_id }}-next',
         prevEl: '.product-bs-{{ $module_id }}-prev',

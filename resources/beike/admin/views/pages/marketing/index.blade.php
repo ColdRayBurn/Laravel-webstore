@@ -159,7 +159,7 @@
       },
 
       mounted() {
-        // 监听浏览器返回事件
+
         window.addEventListener('popstate', () => {
           const page = bk.getQueryString('page');
           this.isBack = true;

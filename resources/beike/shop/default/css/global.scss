@@ -71,7 +71,7 @@ h1,h2,h3, h4, h5, h6, b, strong {
   }
 }
 
-// 生成 100 200 300 ... 1000 的宽度
+
 @for $i from 1 through 10 {
   .wp-#{$i}00 {
     width: #{$i}00px;
@@ -84,35 +84,35 @@ h1,h2,h3, h4, h5, h6, b, strong {
   }
 }
 
-// 生成 100 200 300 ... 1000 的最小高度
+
 @for $i from 1 through 10 {
   .h-min-#{$i}00 {
     min-height: #{$i}00px;
   }
 }
 
-// 生成 100 200 300 ... 1000 的最小宽度
+
 @for $i from 1 through 10 {
   .w-min-#{$i}00 {
     min-width: #{$i}00px;
   }
 }
 
-// 生成 100 200 300 ... 1000 的最大宽度
+
 @for $i from 1 through 10 {
   .w-max-#{$i}00 {
     max-width: #{$i}00px;
   }
 }
 
-// 生成 100 200 300 ... 1000 的高度
+
 @for $i from 1 through 10 {
   .hp-#{$i}00 {
     height: #{$i}00px;
   }
 }
 
-// 生成 10 20 30 ... 90 的高宽
+
 @for $i from 1 through 10 {
   .wh-#{$i}0 {
     height: #{$i}0px;
@@ -430,12 +430,12 @@ img {
   }
 }
 
-// 溢出隐藏 显示省略号
+
 .text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  // 加一个 line
+
   &.line-2 {
     white-space: normal;
     display: -webkit-box;

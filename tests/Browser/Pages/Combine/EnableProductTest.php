@@ -27,14 +27,14 @@ class EnableProductTest extends DuskTestCase
      * @return void
      */
 
-    //启用商品
+
 
     public function testEnableProduct()
     {
 
         $this->browse(function (Browser $browser) {
             $browser->visit(AdminLoginPage::Admin_Login['login_url'])
-                //1.登录
+
                 ->type(AdminLoginPage::Admin_Login['login_email'], LoginData::Ture_Data['email'])
                 ->type(AdminLoginPage::Admin_Login['login_pwd'], LoginData::Ture_Data['password'])
                 ->press(AdminLoginPage::Admin_Login['login_btn'])
@@ -42,19 +42,19 @@ class EnableProductTest extends DuskTestCase
                 ->click(AdminPage::TOP['mg_product']);
             $product1_text = $browser->text(ProductPage::Product_Top['get_name']);
             echo $product1_text;
-            //编辑商品
+
             $browser->press(ProductPage::Product_Top['edit_product'])
                 ->scrollIntoView(CreProductPage::Product_Top['Enable'])
                 ->pause(2000)
-            //启用商品
+
                 ->click(CreProductPage::Product_Top['Enable'])
-            //点击保存
+
                 ->press(CreProductPage::Product_Top['save_btn'])
                 ->pause(3000)
-            //点击商品，跳转前台
+
                 ->clickLink($product1_text)
                 ->driver->switchTo()->window($browser->driver->getWindowHandles()[1]);
-            //断言页面是否有购买按钮
+
             $browser->assertVisible(ProductOne::Product['product_1'])
                 ->pause(3000);
         });

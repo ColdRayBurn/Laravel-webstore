@@ -14,7 +14,7 @@ namespace Beike\Services;
 class ShipmentService
 {
     /**
-     * 处理订单运单数据
+     *
      *
      * @param $expressCode
      * @param $expressNumber
@@ -39,7 +39,7 @@ class ShipmentService
     }
 
     /**
-     * 根据快递公司编号获取快递公司名称
+     *
      *
      * @param $expressCode
      * @return mixed

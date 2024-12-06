@@ -13,21 +13,21 @@ namespace Plugin\Youdao\Libraries;
 
 class Youdao
 {
-    // 文本翻译
+
     public const API_URL = 'https://openapi.youdao.com/api';
 
-    // 富文本翻译
+
     public const API_HTML_URL = 'https://openapi.youdao.com/translate_html';
 
     public const CURL_TIMEOUT = 2000;
 
     /**
-     * @var string 应用ID
+     * @var string ID
      */
     private string $appKey = '';
 
     /**
-     * @var string 应用密钥
+     * @var string
      */
     private string $appSecret = '';
 
@@ -222,7 +222,7 @@ class Youdao
     }
 
     /**
-     * 发起网络请求
+     *
      *
      * @param        $url
      * @param        $args

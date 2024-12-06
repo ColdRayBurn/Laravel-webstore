@@ -72,7 +72,7 @@ class DesignService
     }
 
     /**
-     * 处理 SlideShow 模块
+     *  SlideShow
      *
      * @param $content
      * @return array
@@ -91,7 +91,7 @@ class DesignService
     }
 
     /**
-     * 处理 brand 模块
+     *  brand
      *
      * @param $content
      * @return array
@@ -109,7 +109,7 @@ class DesignService
     }
 
     /**
-     * 处理 SlideShow 模块
+     *  SlideShow
      *
      * @param $content
      * @return array
@@ -129,7 +129,7 @@ class DesignService
     }
 
     /**
-     * 处理 icons 模块
+     *  icons
      *
      * @param $content
      * @return array
@@ -160,7 +160,7 @@ class DesignService
     }
 
     /**
-     * 处理 rich_text 模块
+     *  rich_text
      *
      * @param $content
      * @return array
@@ -174,7 +174,7 @@ class DesignService
     }
 
     /**
-     * 处理选项卡商品列表模块
+     *
      *
      * @param $content
      * @return array
@@ -200,7 +200,7 @@ class DesignService
     }
 
     /**
-     * 处理文章模块
+     *
      *
      * @param $content
      * @return array
@@ -216,7 +216,7 @@ class DesignService
     }
 
     /**
-     * 处理商品模块
+     *
      *
      * @param $content
      * @return array
@@ -231,7 +231,7 @@ class DesignService
     }
 
     /**
-     * 处理图片以及链接
+     *
      * @throws \Exception
      */
     private static function handleImages($images): array
@@ -258,7 +258,7 @@ class DesignService
     }
 
     /**
-     * 处理链接
+     *
      *
      * @param $type
      * @param $value

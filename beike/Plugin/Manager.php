@@ -31,7 +31,7 @@ class Manager
     }
 
     /**
-     * 获取所有插件
+     *
      *
      * @return Collection
      * @throws \Exception
@@ -72,7 +72,7 @@ class Manager
     }
 
     /**
-     * 获取已开启的插件
+     *
      *
      * @return Collection
      * @throws \Exception
@@ -87,7 +87,7 @@ class Manager
     }
 
     /**
-     * 获取已开启插件对应根目录下的启动文件 bootstrap.php
+     *  bootstrap.php
      *
      * @return Collection
      * @throws \Exception
@@ -109,7 +109,7 @@ class Manager
     }
 
     /**
-     * 获取单个插件
+     *
      *
      * @throws \Exception
      */
@@ -122,7 +122,7 @@ class Manager
     }
 
     /**
-     * 获取单个插件
+     *
      *
      * @throws \Exception
      */
@@ -156,7 +156,7 @@ class Manager
     }
 
     /**
-     * 获取插件目录以及配置
+     *
      *
      * @return array
      * @throws FileNotFoundException
@@ -183,7 +183,7 @@ class Manager
     }
 
     /**
-     * 插件根目录
+     *
      *
      * @return string
      */
@@ -193,7 +193,7 @@ class Manager
     }
 
     /**
-     * 上传插件并解压
+     *
      * @throws \Exception
      */
     public function import(UploadedFile $file)

@@ -19,7 +19,7 @@
   <script src="{{ mix('build/beike/admin/js/app.js') }}"></script>
   <title>beike filemanager</title>
   <script>
-    // 获取 iframe 父级 html 标签的 lang 属性
+
     const htmlLang = parent.document.getElementsByTagName('html')[0].getAttribute('lang');
 
     if (htmlLang != 'zh_cn') {
@@ -223,9 +223,9 @@
         triggerLength: 10,
         isShift: false,
         mime: @json(request('mime')),
-        isMultiple: {{ request('is_multiple', true) }}, // 是否允许多选
+        isMultiple: {{ request('is_multiple', true) }},
         loading: false,
-        isBatchSelect: false, // 当前是否正在是否批量选择
+        isBatchSelect: false,
         selectImageIndex: [],
         filterKeyword: '',
         filterKeywordVisible: false,
@@ -241,7 +241,7 @@
           children: []
         }],
 
-        copyTreeData: [], // 用于恢复树形结构
+        copyTreeData: [],
 
         defaultProps: {
           children: 'children',
@@ -267,18 +267,18 @@
         per_page: 20,
         @stack('admin.file_manager.vue.data')
       },
-      // 计算属性
+
       computed: {
         paneLengthValue() {
           return `calc(${this.paneLengthPercent}% - ${this.triggerLength / 2 + 'px'})`
         },
       },
-      // 侦听器
+
       watch: {
         images: {
           handler(val) {
             if (this.isBatchSelect) return;
-            // 将选中的图片索引放入 selectImageIndex，未选中则清空
+
             this.selectImageIndex = val.filter(item => item.selected).map(e => this.images.indexOf(e));
           },
           deep: true
@@ -312,25 +312,25 @@
         }
       },
 
-      // 实例被挂载后调用
+
       mounted() {
         this.loadDirectories()
         this.loadData()
 
         if (this.isMultiple) {
-          // 获取键盘事件 是否按住 shift/ctrl 键 兼容 mac 和 windows
+
           document.addEventListener('keydown', (e) => {
             this.isShift = e.shiftKey;
             this.isCtrl = e.ctrlKey || e.metaKey;
           })
 
-          // 获取键盘事件 是否松开 shift/ctrl 键
+
           document.addEventListener('keyup', (e) => {
             this.isShift = e.shiftKey;
             this.isCtrl = e.ctrlKey || e.metaKey;
           })
 
-          // 判断鼠标是否点击 .image-list 元素
+
           document.addEventListener('click', (e) => {
             if (this.isBatchSelect) return;
             const targets = ['filemanager-navbar', 'content-center']
@@ -359,7 +359,7 @@
             return;
           }
 
-          // 重置搜索框
+
           this.filterKeyword = '';
           this.$refs['keyword-popover'].doClose()
 
@@ -407,9 +407,9 @@
             type: "warning"
           }).then(() => {
             $http.post('file_manager/move_directories', {source_path:path, dest_path:dropPath }).then((res) => {
-              // 修改path
+
               dropNode.data.children[dropNode.data.children.length - 1].path = dropPath + '/' + name;
-              // 如果当前激活目录是移动的目录，则修改当前激活目录为移动后的目录 path
+
               if (this.folderCurrent == path) {
                 this.folderCurrent = dropPath + '/' + name;
                 sessionStorage.setItem('folderCurrent', this.folderCurrent);
@@ -435,7 +435,7 @@
           return true;
         },
 
-        // 图片拖动到文件夹
+
         imgMove(path, name, selectImageIndex) {
           console.log(path, selectImageIndex);
           $('.drop_file_hint').find('span:first-child').text(selectImageIndex.length).siblings('span').text(name);
@@ -453,7 +453,7 @@
           })
         },
 
-        // 文件上传
+
         uploadFile(file) {
           const that = this;
           let newFile = {};
@@ -502,7 +502,7 @@
             const index = defaultkeyarr.findIndex(e => e == node.path);
             if (index > -1) {
               defaultkeyarr.splice(index, 1);
-              // 删除以 node.path 开头的所有元素，除了当前激活目录 -> this.folderCurrent
+
               defaultkeyarr = defaultkeyarr.filter(e => e == this.folderCurrent || !e.startsWith(node.path));
             }
           }
@@ -533,7 +533,7 @@
           }).finally(() => this.loading = false);
         },
 
-        // 按下滑动器
+
         handleMouseDown(e) {
           document.addEventListener('mousemove', this.handleMouseMove)
           document.addEventListener('mouseup', this.handleMouseUp)
@@ -541,7 +541,7 @@
           this.triggerLeftOffset = e.pageX - e.srcElement.getBoundingClientRect().left
         },
 
-        // 按下滑动器后移动鼠标
+
         handleMouseMove(e) {
           const clientRect = this.$refs.splitPane.getBoundingClientRect()
           let paneLengthPercent = 0
@@ -558,17 +558,17 @@
           this.paneLengthPercent = paneLengthPercent;
         },
 
-        // 松开滑动器
+
         handleMouseUp() {
           document.removeEventListener('mousemove', this.handleMouseMove)
         },
 
         checkedImage(index) {
-          // 获取当前选中的 index
+
           const selectedIndex = this.images.findIndex(e => e.selected);
 
           if (this.isShift) {
-            // 获取 selectedIndex 与 index 之间的所有图片
+
             let selectedImages = this.images.slice(Math.min(selectedIndex, index), Math.max(selectedIndex, index) +
             1);
             selectedImages.map(e => e.selected = true)
@@ -594,18 +594,18 @@
           this.fileChecked()
         },
 
-        // 选取
+
         fileChecked() {
           let typedFiles = this.images.filter(e => e.selected)
 
           if (this.mime) {
-            // 判断 typedFiles 数组内 mime 是否有不是 image 开头的
+
             if (this.mime == 'image' && typedFiles.some(e => !e.mime.startsWith('image'))) {
               layer.msg('{{ __('admin/file_manager.verify_select_image') }}', () => {});
               return;
             }
 
-            // 判断 typedFiles 数组内 mime 是否有不是 video 开头的
+
             if (this.mime == 'video' && typedFiles.some(e => !e.mime.startsWith('video'))) {
               layer.msg('{{ __('admin/file_manager.verify_select_video') }}', () => {});
               return;
@@ -616,7 +616,7 @@
             callback(typedFiles);
           }
 
-          // 关闭弹窗
+
           var index = parent.layer.getFrameIndex(window.name);
           parent.layer.close(index);
         },
@@ -626,9 +626,9 @@
             type: 'warning'
           }).then(() => {
             const selectImageIndex = this.selectImageIndex;
-            // 获取images中下标与selectImageIndex相同的图片
+
             const images = this.images.filter(e => selectImageIndex.includes(this.images.indexOf(e)));
-            // images 取 path 组成数组 然后用 | 分割成字符串
+
             const files = images.map(e => e.name);
 
             this.loading = true;
@@ -663,22 +663,22 @@
         },
 
         selectAll() {
-          // 获取 this.images 中的 selected 是否全部为 true
+
           const isAllSelected = this.images.every(e => e.selected);
           this.images.map(e => e.selected = !isAllSelected)
         },
 
         downloadImages() {
-          // 获取选中的图片
+
           const selectedImages = this.images.filter(e => e.selected);
-          // 创建 a 标签
+
           selectedImages.forEach(e => {
             const a = document.createElement('a');
-            // 设置 a 标签的 href 属性
+
             a.href = e.origin_url;
-            // 设置 a 标签的 download 属性
+
             a.download = e.name;
-            // 触发 a 标签的 click 事件
+
             a.click();
           });
         },
@@ -713,9 +713,9 @@
 
           if (type == 'image') {
             const image = this.images[this.selectImageIndex].name;
-            // 获取文件后缀
+
             fileSuffix = image.substring(image.lastIndexOf('.') + 1);
-            // 获取文件名
+
             fileName = image.substring(0, image.lastIndexOf('.'));
           }
 
@@ -761,7 +761,7 @@
                 data.name = value;
                 data.path = data.path.replace(/\/[^\/]*$/, '/' + value);
                 this.folderCurrent = this.folderCurrent.replace(/\/[^\/]*$/, '/' + value);
-                // 递归修改 data 内所有 children -> path 的对应 level = value
+
                 this.changeChildren(data, node, value);
               })
             }
@@ -785,10 +785,10 @@
           if (data.children) {
             data.children.map(e => {
               if (e.path) {
-                // 将字符串转换为数组
+
                 let path = e.path.split('/')
                 path[node.level - 1] = value
-                // 将数组转换为字符串
+
                 e.path = path.join('/')
               }
 

@@ -68,7 +68,7 @@ class PaymentService
     }
 
     /**
-     * 手机端通过 API 支付
+     *  API
      */
     public function mobilePay()
     {

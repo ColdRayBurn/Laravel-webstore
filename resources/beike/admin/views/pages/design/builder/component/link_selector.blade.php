@@ -149,7 +149,7 @@
           {name: '{{ __('shop/account.index') }}', value: 'account.index'},
           {name: '{{ __('shop/account/wishlist.index') }}', value: 'account.wishlist.index'},
           {name: '{{ __('shop/account/order.index') }}', value: 'account.order.index'},
-          // {name: '最新商品', value: 'account.index'},
+
           {name: '{{ __('shop/brands.index') }}', value: 'brands.index'},
         ],
         link: null,
@@ -230,7 +230,7 @@
           this.name = this.linkDialog.data.find(e => e.id == this.link.value).name;
         }
 
-        let links = JSON.parse(JSON.stringify(this.link)); // type 类型切换时，不需要更新视图
+        let links = JSON.parse(JSON.stringify(this.link));
         this.$emit("input", links);
         this.linkDialog.show = false;
         this.$nextTick(() => {

@@ -32,7 +32,7 @@ class Breadcrumb
     }
 
     /**
-     * 获取 Breadcrumb 实例
+     *  Breadcrumb
      * @return Breadcrumb
      */
     public static function getInstance(): self
@@ -41,7 +41,7 @@ class Breadcrumb
     }
 
     /**
-     * 添加面包屑节点链接
+     *
      *
      * @param $url
      * @param $text

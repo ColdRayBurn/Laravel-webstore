@@ -41,7 +41,7 @@ class PageRepo
     }
 
     /**
-     * 获取所有启用的文章列表
+     *
      *
      * @param array $filters
      * @return LengthAwarePaginator
@@ -57,7 +57,7 @@ class PageRepo
     }
 
     /**
-     * 获取启用的非单页
+     *
      *
      * @return LengthAwarePaginator
      */
@@ -71,7 +71,7 @@ class PageRepo
     }
 
     /**
-     * 通过品牌ID获取单页名称
+     * ID
      * @param $id
      * @return mixed|string
      */
@@ -83,7 +83,7 @@ class PageRepo
     }
 
     /**
-     * 获取所有单页ID和名称列表
+     * ID
      * @return array|null
      */
     public static function getAllPagesWithName(): ?array

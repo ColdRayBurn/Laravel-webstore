@@ -33,30 +33,30 @@ class AlterArticleTest extends DuskTestCase
 
         $this->browse(function (Browser $browser) {
             $browser->visit(AdminLoginPage::Admin_Login['login_url'])
-                //登录
+
                 ->type(AdminLoginPage::Admin_Login['login_email'], LoginData::Ture_Data['email'])
                 ->type(AdminLoginPage::Admin_Login['login_pwd'], LoginData::Ture_Data['password'])
                 ->press(AdminLoginPage::Admin_Login['login_btn'])
                 ->pause(2000)
-                //点击文章
+
                 ->click(AdminPage::TOP['mg_article'])
-                //点击点击文章管理
+
                 ->press(ArticlePage::Left['mg_article'])
-                //点击编辑按钮
+
                 ->click(ArticlePage::Common['edit_btn'])
                 ->press(ArticlePage::Top['Cn'])
-                //填写基础信息
+
                 ->type(ArticlePage::Cn_info['title'], ArticleData::Alter_Cn_info['title'])
                 ->type(ArticlePage::Cn_info['summary'], ArticleData::Alter_Cn_info['summary']);
-            //切换窗口
-            //填写卡号
+
+
             $wait              = new WebDriverWait($browser->driver, 10);
             $iframeElementTab1 = $wait->until(function () use ($browser) {
                 return $browser->driver->findElement(WebDriverBy::cssSelector('#mce_0_ifr'));
             });
-            // 切换到 tab1 下的 iframe
+
             $browser->driver->switchTo()->frame($iframeElementTab1);
-            // 在 tab1 下的 iframe 中查找并修改第一个 <p> 元素的文本
+
             $paragraphTab1 = $wait->until(WebDriverExpectedCondition::presenceOfElementLocated(
                 WebDriverBy::tagName('p')
             ));
@@ -73,17 +73,17 @@ class AlterArticleTest extends DuskTestCase
             $browser->press(ArticlePage::Top['En'])
                 ->type(ArticlePage::En_info['title'], ArticleData::Alter_En_info['title'])
                 ->type(ArticlePage::En_info['summary'], ArticleData::Alter_Cn_info['summary']);
-            //切换窗口、填写内容
+
             $wait              = new WebDriverWait($browser->driver, 10);
             $iframeElementTab2 = $wait->until(function () use ($browser) {
                 return $browser->driver->findElement(WebDriverBy::cssSelector('#mce_2_ifr'));
             });
 
-            // 切换到 tab2 下的 iframe
+
             $browser->driver->switchTo()->frame($iframeElementTab2);
             $browser->pause(2000);
 
-            // 在 tab2 下的 iframe 中查找并修改第一个 <p> 元素的文本
+
             $paragraphTab2 = $wait->until(WebDriverExpectedCondition::presenceOfElementLocated(
                 WebDriverBy::tagName('p')
             ));
@@ -96,7 +96,7 @@ class AlterArticleTest extends DuskTestCase
                 ", [$paragraphTab2]);
             $browser->driver->switchTo()->defaultContent();
             $browser->pause(2000);
-            //5.点击保存
+
             $browser->press(ArticlePage::Common['save_btn'])
                 ->pause(2000)
                 ->assertSee(ArticleData::Cn_info['title']);

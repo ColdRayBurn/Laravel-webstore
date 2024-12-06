@@ -54,8 +54,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 返回所有菜单
-     * 小图标地址 https://icons.getbootstrap.com/
+     * https://icons.getbootstrap.com/
      *
      * @return mixed
      */
@@ -137,7 +136,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取二级菜单
+     *
      *
      * @return array|null
      */
@@ -154,7 +153,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 处理是否选中等数据
+     *
      */
     private function handleMenus()
     {
@@ -218,7 +217,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台首页子页面路由前缀列表
+     *
      */
     private function getHomeSubPrefix()
     {
@@ -228,7 +227,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台产品子页面路由前缀列表
+     *
      */
     private function getProductSubPrefix()
     {
@@ -238,7 +237,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台客户子页面路由前缀列表
+     *
      */
     private function getCustomerSubPrefix()
     {
@@ -248,7 +247,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台订单子页面路由前缀列表
+     *
      */
     private function getOrderSubPrefix()
     {
@@ -258,7 +257,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台内容子页面路由前缀列表
+     *
      */
     private function getPageSubPrefix()
     {
@@ -268,7 +267,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台报表子页面路由前缀列表
+     *
      */
     private function getReportSubPrefix()
     {
@@ -278,7 +277,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台设计子页面路由前缀列表
+     *
      */
     private function getDesignSubPrefix()
     {
@@ -288,7 +287,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台设计子页面路由前缀列表
+     *
      */
     private function getPluginSubPrefix()
     {
@@ -298,7 +297,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取后台系统设置子页面路由前缀列表
+     *
      */
     private function getSettingSubPrefix()
     {
@@ -311,7 +310,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取首页子页面路由
+     *
      */
     public function getHomeSubRoutes()
     {
@@ -321,7 +320,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取商品子页面路由
+     *
      */
     public function getProductSubRoutes()
     {
@@ -339,7 +338,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取商品子页面路由
+     *
      */
     public function getCustomerSubRoutes()
     {
@@ -353,7 +352,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取订单子页面路由
+     *
      */
     public function getOrderSubRoutes()
     {
@@ -368,7 +367,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取文章管理子页面路由
+     *
      * @return mixed
      */
     public function getPageSubRoutes()
@@ -382,7 +381,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取报表子页面路由
+     *
      * @return mixed
      */
     public function getReportSubRoutes()
@@ -396,7 +395,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取设计子页面路由
+     *
      * @return mixed
      */
     public function getDesignSubRoutes()
@@ -413,7 +412,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取插件子页面路由
+     *
      * @return mixed
      */
     public function getPluginSubRoutes()
@@ -437,7 +436,7 @@ class Sidebar extends Component
     }
 
     /**
-     * 获取系统设置子页面路由
+     *
      * @return mixed
      */
     public function getSettingSubRoutes()

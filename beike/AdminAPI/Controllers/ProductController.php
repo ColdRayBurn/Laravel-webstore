@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 class ProductController
 {
     /**
-     * 产品列表
+     *
      *
      * @param Request $request
      * @return mixed
@@ -40,7 +40,7 @@ class ProductController
     }
 
     /**
-     * 产品列表
+     *
      *
      * @param Request $request
      * @param Product $product
@@ -60,7 +60,7 @@ class ProductController
     }
 
     /**
-     * 创建商品
+     *
      *
      * @param ProductRequest $request
      * @return mixed
@@ -84,7 +84,7 @@ class ProductController
     }
 
     /**
-     * 编辑商品
+     *
      *
      * @param ProductRequest $request
      * @param Product        $product
@@ -109,7 +109,7 @@ class ProductController
     }
 
     /**
-     * 删除商品
+     *
      *
      * @param Request $request
      * @param Product $product

@@ -23,7 +23,7 @@ use Plugin\Stripe\Services\StripeService;
 class StripeController extends Controller
 {
     /**
-     * 订单支付扣款
+     *
      *
      * @param Request $request
      * @return JsonResponse

@@ -51,7 +51,7 @@ Vue.component('rich-text-i18n', {
     this.initInternalValues();
   },
 
-  // 计算属性
+
   computed: {
     randomNumber() {
       return (Math.random() * 1000000).toFixed(0);

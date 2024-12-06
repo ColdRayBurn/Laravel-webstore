@@ -26,7 +26,7 @@ class AdminAPIServiceProvider extends ServiceProvider
     }
 
     /**
-     * 注册后台用户 guard
+     *  guard
      */
     protected function registerGuard(): void
     {

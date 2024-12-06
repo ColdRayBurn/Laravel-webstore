@@ -20,7 +20,7 @@ use Illuminate\Http\Request;
 class BrandController extends Controller
 {
     /**
-     * 显示品牌列表
+     *
      * @param Request $request
      * @return mixed
      */
@@ -39,7 +39,7 @@ class BrandController extends Controller
     }
 
     /**
-     * 创建品牌
+     *
      *
      * @param Request $request
      * @return JsonResponse
@@ -115,7 +115,7 @@ class BrandController extends Controller
     }
 
     /**
-     * 根据商品ID批量获取商品名称
+     * ID
      *
      * @param Request $request
      * @return JsonResponse

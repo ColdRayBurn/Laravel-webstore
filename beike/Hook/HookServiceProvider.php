@@ -27,8 +27,8 @@ class HookServiceProvider extends ServiceProvider
     }
 
     /**
-     * 添加 blade hook 标签, 不需要 @endhook
-     * @hook('xxx'), 添加 hook 直接输出到页面
+     *  blade hook ,  @endhook
+     * @hook('xxx'),  hook
      */
     protected function bootHookDirectives()
     {
@@ -54,9 +54,9 @@ class HookServiceProvider extends ServiceProvider
     }
 
     /**
-     * 添加 blade wrapper hook 标签
+     *  blade wrapper hook
      *
-     * @hookwrapper('xxx') --- @endhookwrapper, 将某段代码打包输出再添加 hook 输出
+     * @hookwrapper('xxx') --- @endhookwrapper,  hook
      */
     protected function bootWrapperHookDirectives()
     {

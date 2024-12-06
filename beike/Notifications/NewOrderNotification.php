@@ -76,7 +76,7 @@ class NewOrderNotification extends Notification implements ShouldQueue
     }
 
     /**
-     * 保存到 DB
+     *  DB
      * @return Order[]
      */
     public function toDatabase()

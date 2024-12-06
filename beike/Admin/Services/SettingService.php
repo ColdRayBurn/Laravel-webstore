@@ -18,7 +18,7 @@ use Exception;
 class SettingService
 {
     /**
-     * 保存系统设置
+     *
      * @param $settings
      * @return void
      * @throws \Throwable

@@ -6,9 +6,9 @@ class CustomerPage
 {
     public const Left = [
         'url'            => '/Admin/customers',
-        'customer_list'  => '.list-unstyled.navbar-nav:nth-child(2) li:nth-child(1)', //客户列表
-        'customer_group' => '.list-unstyled.navbar-nav:nth-child(2) li:nth-child(2)', //客户组
-        're_station'     => '.list-unstyled.navbar-nav:nth-child(2) li:nth-child(3)', //回收站
+        'customer_list'  => '.list-unstyled.navbar-nav:nth-child(2) li:nth-child(1)',
+        'customer_group' => '.list-unstyled.navbar-nav:nth-child(2) li:nth-child(2)',
+        're_station'     => '.list-unstyled.navbar-nav:nth-child(2) li:nth-child(3)',
     ];
 
     public const Create = [
@@ -31,11 +31,11 @@ class CustomerPage
     ];
 
     public const Group_list = [
-        //创建客户
+
         'cre_customer' => '#customer-app > div.card-body > div.d-flex.justify-content-between.mb-4 > button',
-        //编辑客户
+
         'edit_customer' => '#customer-app > div.card-body > div.table-push > table > tbody > tr:nth-child(1) > td:nth-child(9) > a',
-        //删除客户
+
         'del_customer' => '#customer-app > div.card-body > div.table-push > table > tbody > tr:nth-child(1) > td:nth-child(9) > button',
         'get_assert'   => '#customer-app > div.card-body > div.table-push > table > tbody > tr:nth-child(1) > td:nth-child(2)',
         'sure_btn'     => '确定',
@@ -43,11 +43,11 @@ class CustomerPage
     ];
 
     public const Customer_Group = [
-        //创建客户组
+
         'cre_cus_group' => '#customer-app > div.card-body > div.d-flex.justify-content-between.mb-4 > button',
-        //编辑客户组
+
         'edit_cus_group' => '.btn.btn-outline-secondary.btn-sm',
-        //删除客户组
+
         'del_cus_group' => '.btn.btn-outline-danger.btn-sm.ml-1',
         'get_assert'    => '#customer-app > div.card-body > div.table-push > table > tbody > tr:nth-child(1) > td:nth-child(2)',
         'sure_btn'      => '确定',
@@ -64,10 +64,10 @@ class CustomerPage
     ];
 
     public const Empty_Recycle = [
-        'empty_btn'   => '#customer-app > div.card-body > div.d-flex.justify-content-between.mb-4 > button', //清空数据按钮
-        'recycle_btn' => '#customer-app > div.card-body > div.table-push > table > tbody > tr > td:nth-child(7) > a', //恢复按钮
-        'recycle_del' => '#customer-app > div.card-body > div.table-push > table > tbody > tr > td:nth-child(7) > button', //删除按钮
-        //获取即将被删除的客户email
+        'empty_btn'   => '#customer-app > div.card-body > div.d-flex.justify-content-between.mb-4 > button',
+        'recycle_btn' => '#customer-app > div.card-body > div.table-push > table > tbody > tr > td:nth-child(7) > a',
+        'recycle_del' => '#customer-app > div.card-body > div.table-push > table > tbody > tr > td:nth-child(7) > button',
+
         'customer_text' => '#customer-app > div.card-body > div.table-push > table > tbody > tr > td:nth-child(2)',
         'sure_btn'      => '确定',
         'assert_text'   => '暂无数据～',

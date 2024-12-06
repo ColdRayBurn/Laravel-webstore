@@ -24,7 +24,7 @@ class CartController extends Controller
     }
 
     /**
-     * 选中购物车商品
+     *
      *
      * POST /carts/select {cart_ids:[1, 2]}
      * @param Request $request
@@ -48,7 +48,7 @@ class CartController extends Controller
     }
 
     /**
-     * 不选中购物车商品
+     *
      *
      * POST /carts/unselect {cart_ids:[1, 2]}
      * @param Request $request
@@ -73,7 +73,7 @@ class CartController extends Controller
 
     /**
      * POST /carts {sku_id:1, quantity: 2}
-     * 创建购物车
+     *
      *
      * @param CartRequest $request
      * @return mixed
@@ -142,7 +142,7 @@ class CartController extends Controller
     }
 
     /**
-     * 右上角购物车
+     *
      * @return mixed
      */
     public function miniCart()

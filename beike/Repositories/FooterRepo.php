@@ -14,7 +14,7 @@ namespace Beike\Repositories;
 class FooterRepo
 {
     /**
-     * 处理页尾编辑器数据
+     *
      *
      * @return array|mixed
      */

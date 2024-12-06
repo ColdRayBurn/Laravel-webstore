@@ -211,7 +211,7 @@
           addresses = JSON.parse(JSON.stringify(this.source.addresses[index]))
         }
 
-        // 游客结账
+
         if ((type == 'guest_shipping_address' || type == 'guest_payment_address') && this.source[type]) {
           addresses = JSON.parse(JSON.stringify(this.source[type]))
         }

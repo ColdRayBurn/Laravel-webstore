@@ -7,7 +7,7 @@
  */
 
 export default {
-  // 打开文件管理器
+
   fileManagerIframe(callback, params) {
     const base = document.querySelector('base').href;
     params = params ? `?${Object.keys(params).map(key => `${key}=${params[key]}`).join('&')}` : '';
@@ -31,21 +31,21 @@ export default {
     });
   },
 
-  // 防抖
+
   debounce(fn, delay) {
-    var timeout = null; // 创建一个标记用来存放定时器的返回值
+    var timeout = null;
 
     return function (e) {
-      // 每当用户输入的时候把前一个 setTimeout clear 掉
+
       clearTimeout(timeout);
-      // 然后又创建一个新的 setTimeout, 这样就能保证interval 间隔内如果时间持续触发，就不会执行 fn 函数
+
       timeout = setTimeout(() => {
           fn.apply(this, arguments);
       }, delay);
     }
   },
 
-  // 生成随机字符串
+
   randomString(length = 32) {
     let str = '';
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -55,7 +55,7 @@ export default {
     return str;
   },
 
-  // 获取url参数
+
   getQueryString(name, defaultValue) {
     const reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
     const r = window.location.search.substr(1).match(reg);
@@ -66,7 +66,7 @@ export default {
     return typeof(defaultValue) != 'undefined' ? defaultValue : '';
   },
 
-  // 控制字符串长度 超出显示...
+
   stringLengthInte(text, length = 50) {
     if (text.length) {
       return text.slice(0, length) + (text.length > length ? '...' : '');
@@ -75,7 +75,7 @@ export default {
     return '';
   },
 
-  // 给列表页筛选开发插件使用，场景：开发者需要添加筛选条件，不需要到filter添加筛选key
+
   addFilterCondition(app) {
     if (location.search) {
       const params = location.search.substr(1).split('&');
@@ -86,7 +86,7 @@ export default {
     }
   },
 
-  // 将对象内不为空的转换为url参数 并 添加到url后面
+
   objectToUrlParams(obj, url) {
     const params = [];
     for (const key in obj) {
@@ -98,7 +98,7 @@ export default {
     return `${url}${params.length ? '?' : ''}${params.join('&')}`;
   },
 
-  // 清空对象内的值
+
   clearObjectValue(obj) {
     for (const key in obj) {
       obj[key] = '';
@@ -107,7 +107,7 @@ export default {
     return obj;
   },
 
-  // 设置版本更新提示
+
   versionUpdateTips() {
     const data = JSON.parse(Cookies.get('beike_version') || null);
 
@@ -132,7 +132,7 @@ export default {
     }
   },
 
-  // 列表页使用 vue ajax 分页，点击浏览起前进后退按钮时，重新加载数据
+
   ajaxPageReloadData(app) {
     window.addEventListener('popstate', () => {
       const page = this.getQueryString('page');

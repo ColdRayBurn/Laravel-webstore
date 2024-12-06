@@ -8,7 +8,7 @@
 
 export default {
   /**
-   * @description: 获取购物车数据
+   * @description:
    * @return {*}
    */
   getCarts() {
@@ -25,11 +25,11 @@ export default {
   },
 
   /**
-   * @description: 加入购物车
-   * @param {*} sku_id  商品id
-   * @param {*} quantity  商品数量
-   * @param {*} isBuyNow  是否立即购买
-   * @return {*}  返回Promise
+   * @description:
+   * @param {*} sku_id  id
+   * @param {*} quantity
+   * @param {*} isBuyNow
+   * @return {*}  Promise
    */
   addCart({sku_id, quantity = 1, isBuyNow = false}, event, callback) {
     if (!config.isLogin && !config.guestCheckout) {
@@ -95,7 +95,7 @@ export default {
       scrollbar: false,
       area: ['900px', '600px'],
       skin: 'login-pop-box',
-      content: 'login?iframe=true' //iframe的url
+      content: 'login?iframe=true'
     });
   },
 
@@ -145,16 +145,16 @@ export default {
     + ',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');
   },
 
-  // 判断 js 插件是否加载，如果未加载则往页面添加 script 标签
+
   loadScript(url, callback) {
-    // 判断页面中是否已经存在指定的 js 插件
+
     if (!document.querySelector(`script[src="${url}"]`)) {
-      // 创建一个新的 script 标签
+
       const script = document.createElement('script');
       script.src = url;
-      // 将 script 标签添加到 head 标签中
+
       document.head.appendChild(script);
-      // 监听 js 插件加载完成事件
+
       script.onload = function () {
         callback && callback();
       }
@@ -163,20 +163,20 @@ export default {
     }
   },
 
-  // 判断 css 插件是否加载，如果未加载则往页面添加 link 标签
+
   loadStyle(url) {
-    // 判断页面中是否已经存在指定的 css 插件
+
     if (!document.querySelector(`link[href="${url}"]`)) {
-      // 创建一个新的 link 标签
+
       const link = document.createElement('link');
       link.href = url;
       link.rel = 'stylesheet';
-      // 将 link 标签添加到 head 标签中
+
       document.head.appendChild(link);
     }
   },
 
-  // 处理用户采集来的商品 图片尺寸比例失衡问题，强制 1:1
+
   productImageResize11() {
     if ($('.image-old').length && $('.image-old').width() > 0) {
       $('.image-old').height($('.image-old').width())

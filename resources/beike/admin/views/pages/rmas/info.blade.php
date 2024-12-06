@@ -88,7 +88,7 @@
             </el-option>
           </el-select>
         </el-form-item>
-        {{-- <el-form-item label="通知客户">
+        {{-- <el-form-item label="">
           <el-switch v-model="form.notify">
           </el-switch>
         </el-form-item> --}}

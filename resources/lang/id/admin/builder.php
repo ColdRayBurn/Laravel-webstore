@@ -82,7 +82,7 @@ return [
     'move_down'                        => 'Turunkan',
     'move_up'                          => 'Naik',
 
-    // 固定连接
+
     'text_static_product_latest'       => 'Produk baru',
     'text_static_product_special'      => 'Penawaran istimewa',
     'text_static_product_manufacturer' => 'Zona Merek',

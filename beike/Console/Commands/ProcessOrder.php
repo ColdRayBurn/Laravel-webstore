@@ -37,7 +37,7 @@ class ProcessOrder extends Command
     }
 
     /**
-     * 自动取消未支付订单
+     *
      *
      * @throws \Exception
      */
@@ -68,7 +68,7 @@ class ProcessOrder extends Command
     }
 
     /**
-     * 自动完成已发货订单
+     *
      *
      * @throws \Exception
      */

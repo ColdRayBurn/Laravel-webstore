@@ -7,7 +7,7 @@
  */
 
 $(function () {
-  // 搜索弹出层交互
+
   const myOffcanvas = document.getElementById("offcanvas-search-top");
   if (myOffcanvas) {
     myOffcanvas.addEventListener("shown.bs.offcanvas", function () {
@@ -22,7 +22,7 @@ $(function () {
     });
   }
 
-  // 购物车侧边栏弹出
+
   $(document).on("click", ".btn-right-cart", function () {
     if (!config.isLogin && !config.guestCheckout) {
       bk.openLogin()
@@ -39,7 +39,7 @@ $(function () {
     offcanvasRightCart.show()
   });
 
-  // 侧边栏购物车删除商品
+
   $(document).on('click', '.offcanvas-products-delete', function () {
     const id = $(this).data('id');
 
@@ -57,13 +57,13 @@ $(function () {
     })
   })
 
-  // 响应式下弹窗菜单交互
+
   $(document).on("click", ".mobile-open-menu", function () {
     const offcanvasMobileMenu = new bootstrap.Offcanvas('#offcanvas-mobile-menu')
     offcanvasMobileMenu.show()
   });
 
-  // 右侧购物车弹出层内交互
+
   $(document).on("click", "#offcanvas-right-cart .product-list .select-wrap", function () {
     const [unchecked, checked] = ['bi bi-circle', 'bi bi-check-circle-fill'];
     const productListAll = $('#offcanvas-right-cart .product-list').length;
@@ -122,7 +122,7 @@ $(function () {
     })
   })
 
-  // 右侧购物车弹出层内交互
+
   $(document).on("change", "#offcanvas-right-cart .price input", function () {
     const [id, sku_id, quantity] = [$(this).data('id'), $(this).data('sku'), $(this).val() * 1];
     if ($(this).val() === '') $(this).val(1);
@@ -147,7 +147,7 @@ $(function () {
     $('.offcanvas-right-cart-amount').text(res.data.amount_format);
   }
 
-  // 导航菜单防止小屏幕下(非手机端)，配置列数过多 显示错误
+
   $('.menu-wrap > ul > li').each(function (index, el) {
     if ($(el).children('.dropdown-menu').length) {
       const offsetLeft = $(el).children('.dropdown-menu').offset().left;
@@ -166,7 +166,7 @@ $(function () {
     }
   });
 
-  // 手机端个人中心弹出菜单
+
   (function () {
     $('.mb-account-icon').click(function (e) {
       if ($('.account-sides-wrap').length) {
@@ -186,7 +186,7 @@ $(function () {
     })
   }());
 
-  // PC/MB 头部滑动固定
+
   (function () {
     const pbHeader = $(window).width() > 768 ? $('.header-content') : $('.header-mobile');
     if (!pbHeader.length) return;

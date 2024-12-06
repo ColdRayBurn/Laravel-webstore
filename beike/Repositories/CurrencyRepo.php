@@ -20,7 +20,7 @@ class CurrencyRepo
     private static $enabledCurrencies;
 
     /**
-     * 创建一个currency记录
+     * currency
      * @param $data
      * @return mixed
      */
@@ -68,7 +68,7 @@ class CurrencyRepo
     }
 
     /**
-     * 获取所有货币列表
+     *
      *
      * @return Builder[]|Collection
      */
@@ -78,7 +78,7 @@ class CurrencyRepo
     }
 
     /**
-     * 查找所有已开启货币
+     *
      *
      * @return Builder[]|Collection
      */
@@ -92,7 +92,7 @@ class CurrencyRepo
     }
 
     /**
-     * 根据code查找货币
+     * code
      * @return Builder[]|Collection
      */
     public static function findByCode($code)

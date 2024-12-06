@@ -17,7 +17,7 @@ use Spatie\Permission\Models\Role;
 class AdminRoleRepo
 {
     /**
-     * 创建新角色
+     *
      *
      * @param $data
      * @return Role
@@ -33,7 +33,7 @@ class AdminRoleRepo
     }
 
     /**
-     * 编辑新角色
+     *
      *
      * @param $data
      * @return Role
@@ -54,7 +54,7 @@ class AdminRoleRepo
     }
 
     /**
-     * 同步所有权限
+     *
      *
      * @param  Role       $adminRole
      * @param             $permissions
@@ -79,7 +79,7 @@ class AdminRoleRepo
     }
 
     /**
-     * 删除角色
+     *
      *
      * @param $adminRoleId
      */

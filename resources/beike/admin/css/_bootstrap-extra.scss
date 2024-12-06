@@ -144,7 +144,7 @@ table.table {
   font-size: 0.8rem;
 }
 
-// .btn-outline 开头的按钮
+
 .btn-outline-primary, .btn-outline-info {
   &:hover {
     color: #fff;
@@ -291,7 +291,7 @@ table.table {
       border-radius: 0;
     }
 
-    // 选择第一个
+
     &:first-child {
       input, textarea {
         border-top-right-radius: 0.2rem;
@@ -302,7 +302,7 @@ table.table {
       }
     }
 
-    // 选择最后一个
+
     &:last-child {
       input, textarea {
         border-bottom-right-radius: 0.2rem;

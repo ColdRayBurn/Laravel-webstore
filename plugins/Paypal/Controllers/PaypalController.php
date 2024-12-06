@@ -40,7 +40,7 @@ class PaypalController
     }
 
     /**
-     * 创建 paypal 订单
+     *  paypal
      * @param Request $request
      * @return JsonResponse
      * @throws \Throwable
@@ -69,7 +69,7 @@ class PaypalController
     }
 
     /**
-     * 客户同意后扣款回调
+     *
      * @param Request $request
      * @return JsonResponse
      * @throws \Throwable

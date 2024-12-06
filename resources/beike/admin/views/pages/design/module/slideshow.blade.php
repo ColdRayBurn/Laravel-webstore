@@ -97,7 +97,7 @@ Vue.component('module-editor-slideshow', {
   <script>
     register = @json($register);
 
-    // 定义模块的配置项
+
     register.make = {
       style: {
         background_color: ''

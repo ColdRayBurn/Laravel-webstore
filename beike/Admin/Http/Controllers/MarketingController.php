@@ -51,7 +51,7 @@ class MarketingController
     }
 
     /**
-     * 获取单个插件详情
+     *
      */
     public function show(Request $request)
     {
@@ -76,7 +76,7 @@ class MarketingController
     }
 
     /**
-     * 下单购买插件
+     *
      */
     public function buy(Request $request)
     {
@@ -92,7 +92,7 @@ class MarketingController
     }
 
     /**
-     * 下单购买插件服务
+     *
      */
     public function buyService(Request $request)
     {
@@ -108,7 +108,7 @@ class MarketingController
     }
 
     /**
-     * 获取单个插件详情
+     *
      */
     public function serviceOrder(Request $request)
     {
@@ -125,7 +125,7 @@ class MarketingController
     }
 
     /**
-     * 下载插件安装包到本地
+     *
      */
     public function download(Request $request)
     {
@@ -145,7 +145,7 @@ class MarketingController
         }
     }
 
-    // 根据传入的 token 获取域名，然后判断是否是当前域名
+
     public function checkDomain(Request $request)
     {
         try {
@@ -162,7 +162,7 @@ class MarketingController
         }
     }
 
-    // 根据传入的域名获取 token
+
     public function getToken(Request $request)
     {
         try {

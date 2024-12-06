@@ -49,7 +49,7 @@ class CategoryController extends Controller
     }
 
     /**
-     * 删除分类
+     *
      * @param Request  $request
      * @param Category $category
      * @return JsonResponse
@@ -110,7 +110,7 @@ class CategoryController extends Controller
     }
 
     /**
-     * 获取分类下商品列表
+     *
      *
      * @param Request  $request
      * @param Category $category

@@ -151,7 +151,7 @@ class PluginController extends Controller
     }
 
     /**
-     * 上传插件
+     *
      */
     public function import(Request $request): JsonResponse
     {

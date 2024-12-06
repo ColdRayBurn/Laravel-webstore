@@ -17,7 +17,7 @@ use Plugin\Openai\Models\OpenaiLog;
 class OpenAIService
 {
     /**
-     * 发起 OpenAI 请求
+     *  OpenAI
      *
      * @param $data
      * @return mixed
@@ -72,7 +72,7 @@ class OpenAIService
     }
 
     /**
-     * 获取聊天记录
+     *
      *
      * @param int $perPage
      * @return mixed

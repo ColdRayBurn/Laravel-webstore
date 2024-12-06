@@ -11,7 +11,7 @@ abstract class Controller extends BaseController
     protected string $defaultRoute;
 
     /**
-     * 表单页面获跳转页面链接
+     *
      * @return mixed
      */
     public function getRedirect()
@@ -24,7 +24,7 @@ abstract class Controller extends BaseController
     }
 
     /**
-     * 获取当前管理界面列表页路由
+     *
      * @return string
      */
     private function getDefaultRoute(): string
@@ -37,7 +37,7 @@ abstract class Controller extends BaseController
     }
 
     /**
-     * 导出CSV
+     * CSV
      *
      * @param        $fileName
      * @param        $items

@@ -66,10 +66,10 @@ class Base
     }
 
     /**
-     * 设置 max_tokens的值
-     * 一般来说，max_tokens值越大，模型的表现就越好，
-     * 但是需要考虑到计算资源的限制，max_tokens值不宜过大。
-     * 一般来说，max_tokens值可以设置在比较合理的范围内，比如500到1000之间。
+     *  max_tokens
+     * ，max_tokens，，
+     * ，max_tokens。
+     * ，max_tokens，5001000。
      *
      * @param int $maxTokens
      * @return $this
@@ -82,9 +82,9 @@ class Base
     }
 
     /**
-     * 设置temperature参数值, 参数的范围是0.0到2.0之间。
-     * 在较低的温度下，模型会生成更加安全的文本，
-     * 而在较高的温度下，模型会生成更加创新的文本。
+     * temperature, 0.02.0。
+     * ，，
+     * ，。
      *
      * @param float $temperature
      * @return $this
@@ -97,8 +97,8 @@ class Base
     }
 
     /**
-     * 设置 n 参数值
-     * 指定了返回结果的数量。n参数越大，返回的结果数量也越多。
+     *  n
+     * 。n，。
      *
      * @param int $number
      * @return $this
@@ -111,8 +111,8 @@ class Base
     }
 
     /**
-     * 设置 prompt 参数值
-     * 用于指定一段文本，用于提供给模型参考，以便于生成更加相关的文本
+     *  prompt
+     * ，，
      *
      * @param string $prompt
      * @return $this
@@ -129,7 +129,7 @@ class Base
     }
 
     /**
-     * 发送请求到 OpenAI
+     *  OpenAI
      *
      * @param $url
      * @param $data

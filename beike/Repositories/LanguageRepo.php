@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
 class LanguageRepo
 {
     /**
-     * 创建一个language记录
+     * language
      * @param $data
      * @return Builder|Model
      */
@@ -84,7 +84,7 @@ class LanguageRepo
     }
 
     /**
-     * 获取所有语言
+     *
      * @return Builder[]|Collection
      */
     public static function all()
@@ -93,7 +93,7 @@ class LanguageRepo
     }
 
     /**
-     * 获取所有启用的语言
+     *
      * @return Builder[]|Collection
      */
     public static function enabled()

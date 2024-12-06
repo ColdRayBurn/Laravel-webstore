@@ -40,4 +40,4 @@ $(document).ready(function ($) {
   })
 });
 
-bk.getCarts(); // 页面初始加载购物车数据
+bk.getCarts();

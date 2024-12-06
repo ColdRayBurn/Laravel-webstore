@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Collection;
 class CartRepo
 {
     /**
-     * 创建购物车
+     *
      *
      * @param $customer
      * @return Cart
@@ -73,7 +73,7 @@ class CartRepo
     }
 
     /**
-     * 清空购物车以及购物车已选中商品
+     *
      *
      * @param $customer
      */
@@ -104,7 +104,7 @@ class CartRepo
     }
 
     /**
-     * 获取已选中购物车商品列表
+     *
      *
      * @param $customerId
      * @return Builder[]|Collection
@@ -119,7 +119,7 @@ class CartRepo
     }
 
     /**
-     * 已选中购物车商品 builder
+     *  builder
      *
      * @param $customerId
      * @return Builder
@@ -130,7 +130,7 @@ class CartRepo
     }
 
     /**
-     * 获取所有购物车商品列表
+     *
      *
      * @param $customerId
      * @return Builder[]|Collection
@@ -141,7 +141,7 @@ class CartRepo
     }
 
     /**
-     * 当前购物车所有商品 builder
+     *  builder
      *
      * @param $customerId
      * @return Builder

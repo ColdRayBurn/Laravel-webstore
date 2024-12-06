@@ -56,7 +56,7 @@ class TranslationService
     }
 
     /**
-     * 获取翻译工具对象
+     *
      *
      * @return TranslatorService|null
      * @throws \Exception

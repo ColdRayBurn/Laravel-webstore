@@ -66,7 +66,7 @@ class CategoryService
     {
         // Paths
         $paths = [];
-        // 复制上级分类的 paths
+
         $level       = 0;
         $parentPaths = CategoryPath::query()->where('category_id', $category->parent_id)->orderBy('level')->get();
         foreach ($parentPaths as $path) {
@@ -76,7 +76,7 @@ class CategoryService
             ];
             $level++;
         }
-        // 自身
+
         $paths[] = [
             'path_id' => $category->id,
             'level'   => $level,
@@ -136,7 +136,7 @@ class CategoryService
     }
 
     /**
-     * 重建category path
+     * category path
      *
      * @param int $parentId
      */

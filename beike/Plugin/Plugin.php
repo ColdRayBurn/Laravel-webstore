@@ -22,14 +22,14 @@ use Illuminate\Support\Str;
 class Plugin implements \ArrayAccess, Arrayable
 {
     public const TYPES = [
-        'payment',    // 支付方式
-        'shipping',   // 配送方式
-        'theme',      // 主题模板
-        'feature',    // 功能模块
-        'total',      // 订单金额
-        'social',     // 社交网络
-        'language',   // 语言翻译
-        'translator', // 翻译工具
+        'payment',
+        'shipping',
+        'theme',
+        'feature',
+        'total',
+        'social',
+        'language',
+        'translator',
     ];
 
     protected $type;
@@ -142,8 +142,8 @@ class Plugin implements \ArrayAccess, Arrayable
     }
 
     /**
-     * 处理插件后台设置字段多语言 优先级: label > label_key
-     * 有label字段则直接返回, label_key 则翻译
+     *  : label > label_key
+     * label, label_key
      */
     public function handleLabel(): void
     {
@@ -160,7 +160,7 @@ class Plugin implements \ArrayAccess, Arrayable
     }
 
     /**
-     * 翻译 label
+     *  label
      * @param $item
      * @return mixed
      */
@@ -273,7 +273,7 @@ class Plugin implements \ArrayAccess, Arrayable
     }
 
     /**
-     * 获取插件对应的设置字段, 并获取已存储在DB的字段值
+     * , DB
      *
      * @return array
      */
@@ -294,7 +294,7 @@ class Plugin implements \ArrayAccess, Arrayable
     }
 
     /**
-     * 字段验证
+     *
      * @param $requestData
      * @return \Illuminate\Contracts\Validation\Validator
      */
@@ -306,7 +306,7 @@ class Plugin implements \ArrayAccess, Arrayable
     }
 
     /**
-     * 获取插件自定义编辑模板
+     *
      * @return string
      */
     public function getColumnView(): string
@@ -320,7 +320,7 @@ class Plugin implements \ArrayAccess, Arrayable
     }
 
     /**
-     * 获取插件启动文件路径
+     *
      *
      * @return string
      */

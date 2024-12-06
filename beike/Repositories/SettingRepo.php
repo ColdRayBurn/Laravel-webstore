@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Artisan;
 class SettingRepo
 {
     /**
-     * 按照类型分组获取设置
+     *
      */
     public static function getGroupedSettings(): array
     {
@@ -46,7 +46,7 @@ class SettingRepo
     }
 
     /**
-     * 获取插件默认字段
+     *
      *
      * @return array
      */
@@ -61,7 +61,7 @@ class SettingRepo
     }
 
     /**
-     * 获取单个插件所有字段
+     *
      * @param $pluginCode
      * @return mixed
      */
@@ -75,7 +75,7 @@ class SettingRepo
     }
 
     /**
-     * 获取单个插件状态
+     *
      *
      * @param $pluginCode
      * @return bool
@@ -88,7 +88,7 @@ class SettingRepo
     }
 
     /**
-     * 批量更新设置
+     *
      *
      * @param $type
      * @param $code
@@ -123,7 +123,7 @@ class SettingRepo
     }
 
     /**
-     * 创建或更新单条记录
+     *
      *
      * @param             $name
      * @param             $value

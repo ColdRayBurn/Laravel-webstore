@@ -31,7 +31,7 @@ class ProductRepo
     private static $allProductsWithName;
 
     /**
-     * 获取商品详情
+     *
      */
     public static function getProductDetail($product)
     {
@@ -46,7 +46,7 @@ class ProductRepo
     }
 
     /**
-     * 通过单个或多个商品分类获取商品列表
+     *
      *
      * @param $categoryId
      * @param $filterData
@@ -63,7 +63,7 @@ class ProductRepo
     }
 
     /**
-     * 通过商品ID获取商品列表
+     * ID
      * @param $productIds
      * @return AnonymousResourceCollection
      * @throws \Exception
@@ -80,7 +80,7 @@ class ProductRepo
     }
 
     /**
-     * 获取商品筛选对象
+     *
      *
      * @param array $filters
      * @return Builder
@@ -119,7 +119,7 @@ class ProductRepo
             $builder->orderByRaw("FIELD(products.id, {$productIds})");
         }
 
-        // attr 格式:attr=10:10,13|11:34,23|3:4
+
         if (isset($filters['attr']) && $filters['attr']) {
             $attributes = self::parseFilterParamsAttr($filters['attr']);
             foreach ($attributes as $attribute) {
@@ -143,7 +143,7 @@ class ProductRepo
 
         if (isset($filters['price']) && $filters['price']) {
             $builder->whereHas('skus', function ($query) use ($filters) {
-                // price 格式:price=30-100
+
                 $prices = explode('-', $filters['price']);
                 if (! $prices[1]) {
                     $query->where('price', '>', $prices[0] ?: 0)->where('is_default', 1);
@@ -191,7 +191,7 @@ class ProductRepo
             $builder->where('active', (int) $filters['active']);
         }
 
-        // 回收站
+
         if (isset($filters['trashed']) && $filters['trashed']) {
             $builder->onlyTrashed();
         }
@@ -329,7 +329,7 @@ class ProductRepo
     }
 
     /**
-     * 获取商品ID获取单个商品名称
+     * ID
      *
      * @param $id
      * @return HigherOrderBuilderProxy|mixed|string
@@ -345,7 +345,7 @@ class ProductRepo
     }
 
     /**
-     * 通过商品ID获取商品名称
+     * ID
      * @param $id
      * @return mixed|string
      */
@@ -355,7 +355,7 @@ class ProductRepo
     }
 
     /**
-     * 获取所有商品ID和名称列表
+     * ID
      *
      * @return array|null
      */
@@ -394,7 +394,7 @@ class ProductRepo
     }
 
     /**
-     * 通过商品ID获取商品列表
+     * ID
      * @return array|Builder[]|Collection
      */
     public static function getListByProductIds($productIds)
@@ -440,7 +440,7 @@ class ProductRepo
     {
         $minutes = system_setting('base.product_view_minutes', 1);
         $count   = $product->views()->where('session_id', get_session_id())->where('created_at', '>', now()->subMinutes($minutes))->count();
-        // 如果当前session_id对该商品$minutes分钟内有个访问记录，则不重复记录访问次数。
+
         if ($count) {
             return;
         }

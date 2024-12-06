@@ -18,7 +18,7 @@ use Beike\Shop\Services\CheckoutService;
 class Bootstrap
 {
     /**
-     * 获取固定运费方式
+     *
      *
      * @param CheckoutService $checkout
      * @param Plugin          $plugin
@@ -42,7 +42,7 @@ class Bootstrap
     }
 
     /**
-     * 计算固定运费
+     *
      *
      * @param CheckoutService $checkout
      * @return float|int

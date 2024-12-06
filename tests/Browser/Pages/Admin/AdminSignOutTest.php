@@ -24,18 +24,18 @@ class AdminSignOutTest extends DuskTestCase
      * @return void
      */
 
-    //后台退出
+
     public function testAdminSignOut()
     {
 
         $this->browse(function (Browser $browser) {
             $browser->visit(AdminLoginPage::Admin_Login['login_url'])
-                //1.登录
+
                 ->type(AdminLoginPage::Admin_Login['login_email'], LoginData::Ture_Data['email'])
                 ->type(AdminLoginPage::Admin_Login['login_pwd'], LoginData::Ture_Data['password'])
                 ->press(AdminLoginPage::Admin_Login['login_btn'])
                 ->pause(2000)
-                //2.退出
+
                 ->click(AdminPage::TOP['root'])
                 ->pause(2000)
                 ->click(AdminPage::TOP['sign_out'])

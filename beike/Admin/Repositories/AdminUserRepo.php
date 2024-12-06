@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\Exception\NotAcceptableHttpException;
 class AdminUserRepo
 {
     /**
-     * 获取后台用户管理员列表
+     *
      */
     public static function getAdminUsers(): array
     {
@@ -30,7 +30,7 @@ class AdminUserRepo
     }
 
     /**
-     * 创建后台管理员用户
+     *
      *
      * @param $data
      * @return AdminUser
@@ -54,7 +54,7 @@ class AdminUserRepo
     }
 
     /**
-     * 更新后台管理员用户
+     *
      *
      * @param $adminUserId
      * @param $data
@@ -87,7 +87,7 @@ class AdminUserRepo
     }
 
     /**
-     * 删除后台用户
+     *
      *
      * @param             $adminUserId
      * @throws \Exception

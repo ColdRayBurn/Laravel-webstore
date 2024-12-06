@@ -347,7 +347,7 @@ class CreateTables extends Migration
         });
 
 
-        // 区域组, 比如江浙沪, 中国西部
+
         Schema::create('regions', function (Blueprint $table) {
             $table->comment('区域组, 比如江浙沪, 中国西部');
             $table->id()->comment('ID');
@@ -355,7 +355,7 @@ class CreateTables extends Migration
             $table->string('description')->comment('描述');
             $table->timestamps();
         });
-        // 区域组与国家省市县关联表
+
         Schema::create('region_zones', function (Blueprint $table) {
             $table->comment('区域组与国家省市县关联表');
             $table->id()->comment('ID');

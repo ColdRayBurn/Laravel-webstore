@@ -22,7 +22,7 @@ class CategoryRepo
     private static $allCategoryWithName = null;
 
     /**
-     * 后台获取分类列表
+     *
      * @return Builder[]|Collection
      */
     public static function getAdminList()
@@ -35,7 +35,7 @@ class CategoryRepo
     }
 
     /**
-     * 清理分类数据
+     *
      */
     public static function cleanCategories()
     {
@@ -72,7 +72,7 @@ class CategoryRepo
     }
 
     /**
-     * 生成每页产品数列表, 客户可以自己选择如何分页
+     * ,
      *
      * @return array
      */
@@ -88,7 +88,7 @@ class CategoryRepo
     }
 
     /**
-     * 获取顶级及其子分类
+     *
      */
     public static function getTwoLevelCategories()
     {
@@ -106,7 +106,7 @@ class CategoryRepo
     }
 
     /**
-     * 获取商品分类列表
+     *
      *
      * @param array $filters
      * @return Builder[]|Collection
@@ -119,7 +119,7 @@ class CategoryRepo
     }
 
     /**
-     * 获取筛选builder
+     * builder
      *
      * @param array $filters
      * @return Builder
@@ -138,7 +138,7 @@ class CategoryRepo
     }
 
     /**
-     * 自动完成
+     *
      *
      * @param $name
      * @return array
@@ -179,7 +179,7 @@ class CategoryRepo
     }
 
     /**
-     * 删除商品分类
+     *
      * @throws \Exception
      */
     public static function delete($category)
@@ -196,7 +196,7 @@ class CategoryRepo
     }
 
     /**
-     * 通过分类ID获取商品名称
+     * ID
      * @param $category
      * @return mixed|string
      */
@@ -209,7 +209,7 @@ class CategoryRepo
     }
 
     /**
-     * 获取所有商品分类ID和名称列表
+     * ID
      * @return array|null
      */
     public static function getAllCategoriesWithName(): ?array

@@ -61,7 +61,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 导入OC产品数据
+     * OC
      */
     public function handle()
     {
@@ -71,7 +71,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 导入分类数据
+     *
      */
     private function importCategories()
     {
@@ -115,7 +115,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 导入品牌数据
+     *
      */
     private function importBrands()
     {
@@ -141,7 +141,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 导入产品
+     *
      */
     private function importProducts()
     {
@@ -164,7 +164,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 导入单个产品
+     *
      * @param Collection $ocProducts
      */
     private function importProduct(Collection $ocProducts)
@@ -184,7 +184,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 构造 beike 产品
+     *  beike
      */
     private function generateBeikeProduct($ocProduct, $productVariants, $childProducts)
     {
@@ -205,7 +205,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 生成 beike 产品规格
+     *  beike
      * @return array[]
      */
     private function generateVariables($ocProduct, $childProducts): array
@@ -265,7 +265,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 生成 beike 产品描述
+     *  beike
      * @param $ocProduct
      * @return array
      */
@@ -291,7 +291,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 生成 beike 产品 SKU
+     *  beike  SKU
      *
      * @param       $ocProduct
      * @param       $productVariants
@@ -301,17 +301,17 @@ class MigrateFromOpenCart extends Command
      */
     private function generateSkus($ocProduct, $productVariants, $childProducts, array $variables): array
     {
-        // 简单商品
+
         if (count($productVariants) == 0) {
             return $this->generateSimpleSku($ocProduct);
         }
 
         $masterSku = $childSkus = [];
-        // 有主商品
+
         if (count($productVariants) > 0) {
             $masterSku = $this->generateMasterSku($ocProduct, $productVariants, $variables);
         }
-        // 有子商品
+
         if (count($childProducts) > 0) {
             $childSkus = $this->generateChildSkus($childProducts, $variables);
         }
@@ -323,7 +323,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 获取简单商品 SKU
+     *  SKU
      * @param $ocProduct
      * @return array[]
      */
@@ -348,7 +348,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 获取主商品 SKU
+     *  SKU
      * @param $ocProduct
      * @param $productVariants
      * @param $variables
@@ -374,7 +374,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 获取子商品SKU
+     * SKU
      * @param $childProducts
      * @param $variables
      * @return array
@@ -406,7 +406,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 生成商品 SKU 多规格数据
+     *  SKU
      *
      * @param $productVariants
      * @param $variables
@@ -433,7 +433,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 生成商品分类关联
+     *
      *
      * @param $ocProduct
      * @return array
@@ -449,7 +449,7 @@ class MigrateFromOpenCart extends Command
     }
 
     /**
-     * 清空产品相关数据
+     *
      */
     private function clearData()
     {

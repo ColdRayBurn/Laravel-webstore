@@ -26,7 +26,7 @@ use Illuminate\Http\Request;
 class SettingController extends Controller
 {
     /**
-     * 显示系统设置页面
+     *
      *
      * @return mixed
      */
@@ -54,7 +54,7 @@ class SettingController extends Controller
     }
 
     /**
-     * 更新系统设置
+     *
      *
      * @throws \Throwable
      */

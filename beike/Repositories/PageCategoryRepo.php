@@ -66,7 +66,7 @@ class PageCategoryRepo
     }
 
     /**
-     * 创建或更新文章分类
+     *
      *
      * @param $data
      * @return mixed
@@ -119,7 +119,7 @@ class PageCategoryRepo
     }
 
     /**
-     * 删除文章分类
+     *
      */
     public static function deleteById($pageCategoryId)
     {
@@ -129,7 +129,7 @@ class PageCategoryRepo
     }
 
     /**
-     * 通过名字搜索文章分类
+     *
      *
      * @param $name
      * @return array

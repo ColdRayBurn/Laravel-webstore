@@ -45,7 +45,7 @@ class TotalService
     }
 
     /**
-     * 设置配送方式
+     *
      */
     public function setShippingMethod($methodCode): self
     {
@@ -60,7 +60,7 @@ class TotalService
     }
 
     /**
-     * 获取税费数据
+     *
      *
      * @return array
      */
@@ -108,7 +108,7 @@ class TotalService
     }
 
     /**
-     * total 与类名 映射
+     * total
      *
      * @return mixed
      */
@@ -127,7 +127,7 @@ class TotalService
     }
 
     /**
-     * 获取当前购物车商品总额
+     *
      *
      * @return mixed
      */

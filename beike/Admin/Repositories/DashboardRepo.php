@@ -18,7 +18,7 @@ use Beike\Repositories\ProductRepo;
 class DashboardRepo
 {
     /**
-     * 获取商品总数
+     *
      *
      * @return array
      * @throws \Exception
@@ -44,7 +44,7 @@ class DashboardRepo
     }
 
     /**
-     * 获取客户访问统计今日昨日比较
+     *
      * @return array
      * @todo
      */
@@ -69,7 +69,7 @@ class DashboardRepo
     }
 
     /**
-     * 获取订单基础统计, 总数和今日昨日比较
+     * ,
      *
      * @return array
      */
@@ -94,7 +94,7 @@ class DashboardRepo
     }
 
     /**
-     * 获取客户注册今日昨日比较
+     *
      *
      * @return array
      */
@@ -119,7 +119,7 @@ class DashboardRepo
     }
 
     /**
-     * 获取订单总额基础统计, 总数和今日昨日比较
+     * ,
      *
      * @return array
      */

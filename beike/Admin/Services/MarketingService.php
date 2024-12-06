@@ -36,7 +36,7 @@ class MarketingService
     }
 
     /**
-     * 获取可插件市场插件列表
+     *
      *
      * @param array $filters
      * @return mixed
@@ -52,7 +52,7 @@ class MarketingService
     }
 
     /**
-     * 获取插件市场单个插件信息
+     *
      *
      * @param $pluginCode
      * @return mixed
@@ -84,7 +84,7 @@ class MarketingService
     }
 
     /**
-     * 购买插件市场单个插件
+     *
      *
      * @throws \Exception
      */
@@ -105,7 +105,7 @@ class MarketingService
     }
 
     /**
-     * 购买插件服务
+     *
      *
      * @throws \Exception
      */
@@ -126,7 +126,7 @@ class MarketingService
     }
 
     /**
-     * 获取插件服务订单信息
+     *
      *
      * @param $pluginServiceOrderId
      * @return mixed
@@ -144,7 +144,7 @@ class MarketingService
     }
 
     /**
-     * 下载插件到网站
+     *
      *
      * @param             $pluginCode
      * @throws \Exception

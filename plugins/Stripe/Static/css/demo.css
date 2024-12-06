@@ -1,5 +1,5 @@
 /**
-这里是插件css, 请在blade里面使用以下代码引入
+css, blade
 <link rel="stylesheet" href="{{ asset('plugin/stripe/css/demo.css') }}">
  */
 

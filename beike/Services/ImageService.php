@@ -34,7 +34,7 @@ class ImageService
     }
 
     /**
-     * 设置插件目录名称
+     *
      * @param $dirName
      * @return $this
      */
@@ -57,7 +57,7 @@ class ImageService
     }
 
     /**
-     * 生成并获取缩略图
+     *
      * @param int $width
      * @param int $height
      * @return string
@@ -105,7 +105,7 @@ class ImageService
     }
 
     /**
-     * 获取原图地址
+     *
      */
     public function originUrl(): string
     {

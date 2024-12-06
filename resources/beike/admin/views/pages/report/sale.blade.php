@@ -237,7 +237,7 @@
   }
 
   $('.orders-right .btn-group > .btn').on('click', function() {
-    const day = $(this).data('type'); // 天数
+    const day = $(this).data('type');
     const labels = eval(day).period;
     const data = [eval(day).totals, eval(day).amounts];
     $(this).addClass('btn-info text-white').siblings().removeClass('btn-info text-white');

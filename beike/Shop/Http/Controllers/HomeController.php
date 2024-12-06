@@ -8,7 +8,7 @@ use Illuminate\Contracts\View\View;
 class HomeController extends Controller
 {
     /**
-     * 通过page builder 显示首页
+     * page builder
      *
      * @return View
      * @throws \Exception

@@ -16,7 +16,7 @@ use Beike\Models\VerifyCode;
 class VerifyCodeRepo
 {
     /**
-     * 创建一个记录
+     *
      * @param $data
      * @return int
      */

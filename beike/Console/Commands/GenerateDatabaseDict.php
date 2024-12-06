@@ -33,7 +33,7 @@ class GenerateDatabaseDict extends Command
     }
 
     /**
-     * 获取所有数据表信息
+     *
      * @return Collection
      */
     private function getTables(): Collection

@@ -51,7 +51,7 @@
         type: {
           default: 'image'
         },
-        isLanguage: { // 是否需要多语言配置
+        isLanguage: {
           default: true
         },
       },

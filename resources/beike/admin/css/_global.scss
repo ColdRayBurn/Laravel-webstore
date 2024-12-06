@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 768px) {
-  // 生成 100 200 300 ... 1000 的宽度
+
   @for $i from 1 through 10 {
     .wp-#{$i}00 {
       width: #{$i}00px;
@@ -41,7 +41,7 @@
       width: calc(100% - #{$i}00px);
     }
   }
-  // 生成 100 200 300 ... 1000 的高度
+
   @for $i from 1 through 10 {
     .hp-#{$i}00 {
       height: #{$i}00px;
@@ -49,21 +49,21 @@
   }
 }
 
-// 生成 100 200 300 ... 1000 的最小高度
+
 @for $i from 1 through 10 {
   .h-min-#{$i}00 {
     min-height: #{$i}00px;
   }
 }
 
-// 生成 100 200 300 ... 1000 的最小宽度
+
 @for $i from 1 through 10 {
   .w-min-#{$i}00 {
     min-width: #{$i}00px;
   }
 }
 
-// 生成 100 200 300 ... 1000 的最大宽度
+
 @for $i from 1 through 10 {
   .w-max-#{$i}00 {
     max-width: #{$i}00px;
@@ -72,7 +72,7 @@
 
 
 
-// 生成 10 20 30 ... 90 的高宽
+
 @for $i from 1 through 10 {
   .wh-#{$i}0 {
     height: #{$i}0px;
@@ -383,7 +383,7 @@ table.table thead th, .fw-bold, h1,h2,h3, h4, h5, h6, b, strong, .card .card-hea
 }
 
 
-// 处理 el-form 表单在非中文情况下的 显示问题
+
 @media (min-width: 768px) {
   body:not(.zh_cn) {
     .el-form:not(.el-form--label-top) {
@@ -596,19 +596,19 @@ table.table thead th, .fw-bold, h1,h2,h3, h4, h5, h6, b, strong, .card .card-hea
 
   tbody {
     tr {
-      // 第一名 第二名 第三名 不同的背景色
+
       &:nth-child(1) {
-        // 金色
+
         background-color: rgba($color: #ffd700, $alpha: .1);
       }
 
       &:nth-child(2) {
-        // 银色
+
         background-color: rgba($color: #c0c0c0, $alpha: .1);
       }
 
       &:nth-child(3) {
-        // 铜色
+
         background-color: rgba($color: #cd7f32, $alpha: .1);
       }
     }

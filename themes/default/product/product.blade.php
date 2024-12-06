@@ -270,7 +270,7 @@
       el: '#product-app',
 
       data: {
-        selectedVariantsIndex: [], // 选中的变量索引
+        selectedVariantsIndex: [],
         images: [],
         product: {
           id: 0,
@@ -296,7 +296,6 @@
         const skuDefault = skus.find(e => e.is_default)
         this.selectedVariantsIndex = skuDefault.variants
 
-        // 为 variables 里面每一个 values 的值添加 selected、disabled 字段
         if (this.source.variables.length) {
           this.source.variables.forEach(variable => {
             variable.values.forEach(value => {
@@ -309,7 +308,6 @@
           this.getSelectedSku(false);
           this.updateSelectedVariantsStatus()
         } else {
-          // 如果没有默认的sku，则取第一个sku的第一个变量的第一个值
           this.product = skus[0];
           this.images = @json($product['images'] ?? []);
         }
@@ -327,7 +325,6 @@
           this.updateSelectedVariantsStatus()
         },
 
-        // 把对应 selectedVariantsIndex 下标选中 variables -> values 的 selected 字段为 true
         checkedVariants() {
           this.source.variables.forEach((variable, index) => {
             variable.values[this.selectedVariantsIndex[index]].selected = true
@@ -335,7 +332,6 @@
         },
 
         getSelectedSku(reload = true) {
-          // 通过 selectedVariantsIndex 的值比对 skus 的 variables
           const sku = this.source.skus.find(sku => sku.variants.toString() == this.selectedVariantsIndex.toString())
           this.images = @json($product['images'] ?? [])
 
@@ -361,7 +357,7 @@
         addCart(isBuyNow = false) {
           bk.addCart({sku_id: this.product.id, quantity: this.quantity, isBuyNow}, null, () => {
             if (isIframe) {
-              let index = parent.layer.getFrameIndex(window.name); //当前iframe层的索引
+              let index = parent.layer.getFrameIndex(window.name);
               parent.bk.getCarts();
 
               setTimeout(() => {
@@ -382,7 +378,6 @@
         },
 
         updateSelectedVariantsIndex() {
-          // 获取选中的 variables 内 value的 下标 index 填充到 selectedVariantsIndex 中
           this.source.variables.forEach((variable, index) => {
             variable.values.forEach((value, value_index) => {
               if (value.selected) {
@@ -393,7 +388,6 @@
         },
 
         updateSelectedVariantsStatus() {
-          // skus 里面 quantity 不为 0 的 sku.variants
           const skus = this.source.skus.filter(sku => sku.quantity > 0).map(sku => sku.variants);
           this.source.variables.forEach((variable, index) => {
             variable.values.forEach((value, value_index) => {
@@ -460,13 +454,11 @@
         },
       },
       spaceBetween: 30,
-      // 如果需要前进后退按钮
       navigation: {
         nextEl: '.relations-swiper-next',
         prevEl: '.relations-swiper-prev',
       },
 
-      // 如果需要分页器
       pagination: {
         el: '.relations-pagination',
         clickable: true,

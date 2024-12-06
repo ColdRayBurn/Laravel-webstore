@@ -36,7 +36,7 @@ class PermissionRepo
     }
 
     /**
-     * 所有权限列表
+     *
      *
      * @return array
      * @throws \Exception
@@ -79,7 +79,7 @@ class PermissionRepo
     }
 
     /**
-     * 插件权限
+     *
      *
      * @return array
      * @throws \Exception
@@ -94,7 +94,7 @@ class PermissionRepo
     }
 
     /**
-     * 订单权限列表
+     *
      *
      * @return array
      */
@@ -107,7 +107,7 @@ class PermissionRepo
     }
 
     /**
-     * 售后（退换货）权限列表
+     * （）
      *
      * @return array
      */
@@ -120,7 +120,7 @@ class PermissionRepo
     }
 
     /**
-     * 售后（退换货）原因权限列表
+     * （）
      *
      * @return array
      */
@@ -133,7 +133,7 @@ class PermissionRepo
     }
 
     /**
-     * 商品权限列表
+     *
      *
      * @return array
      */
@@ -146,7 +146,7 @@ class PermissionRepo
     }
 
     /**
-     * 分类权限列表
+     *
      *
      * @return array
      */
@@ -159,7 +159,7 @@ class PermissionRepo
     }
 
     /**
-     * 品牌权限列表
+     *
      *
      * @return array
      */
@@ -172,7 +172,7 @@ class PermissionRepo
     }
 
     /**
-     * 属性权限列表
+     *
      *
      * @return array
      */
@@ -185,7 +185,7 @@ class PermissionRepo
     }
 
     /**
-     * 属性组权限列表
+     *
      *
      * @return array
      */
@@ -198,7 +198,7 @@ class PermissionRepo
     }
 
     /**
-     * 客户权限列表
+     *
      *
      * @return array
      */
@@ -211,7 +211,7 @@ class PermissionRepo
     }
 
     /**
-     * 客户组权限列表
+     *
      *
      * @return array
      */
@@ -224,7 +224,7 @@ class PermissionRepo
     }
 
     /**
-     * 设置权限列表
+     *
      *
      * @return array
      */
@@ -237,7 +237,7 @@ class PermissionRepo
     }
 
     /**
-     * 文章管理列表
+     *
      * @return array
      */
     private function getPagePermissions(): array
@@ -249,7 +249,7 @@ class PermissionRepo
     }
 
     /**
-     * 文章分类管理列表
+     *
      * @return array
      */
     private function getPageCategoryPermissions(): array
@@ -261,7 +261,7 @@ class PermissionRepo
     }
 
     /**
-     * 插件权限列表
+     *
      *
      * @return array
      */
@@ -274,7 +274,7 @@ class PermissionRepo
     }
 
     /**
-     * 插件权限列表
+     *
      *
      * @return array
      */
@@ -287,7 +287,7 @@ class PermissionRepo
     }
 
     /**
-     * 报表权限列表
+     *
      *
      * @return array
      */
@@ -300,7 +300,7 @@ class PermissionRepo
     }
 
     /**
-     * 后台管理员权限列表
+     *
      *
      * @return array
      */
@@ -313,7 +313,7 @@ class PermissionRepo
     }
 
     /**
-     * 后台管理员权限列表
+     *
      *
      * @return array
      */
@@ -326,7 +326,7 @@ class PermissionRepo
     }
 
     /**
-     * 区域分组权限列表
+     *
      *
      * @return array
      */
@@ -339,7 +339,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取税率权限列表
+     *
      *
      * @return array[]
      */
@@ -352,7 +352,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取税类权限列表
+     *
      *
      * @return array[]
      */
@@ -365,7 +365,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取汇率权限列表
+     *
      *
      * @return array[]
      */
@@ -378,7 +378,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取语言权限列表
+     *
      *
      * @return array[]
      */
@@ -391,7 +391,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取文件管理器权限列表
+     *
      *
      * @return array[]
      */
@@ -404,7 +404,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取省份权限列表
+     *
      *
      * @return array[]
      */
@@ -417,7 +417,7 @@ class PermissionRepo
     }
 
     /**
-     * 获取国家权限列表
+     *
      *
      * @return array[]
      */
@@ -430,7 +430,7 @@ class PermissionRepo
     }
 
     /**
-     * 处理第三方插件权限
+     *
      *
      * @param $pluginPermissions
      * @return array
@@ -460,7 +460,7 @@ class PermissionRepo
     }
 
     /**
-     * 根据模块和路由返回权限列表
+     *
      *
      * @param $module
      * @param $routes
@@ -477,7 +477,7 @@ class PermissionRepo
     }
 
     /**
-     * 判断当前用户或者角色是否有权限
+     *
      *
      * @param $permission
      * @return bool

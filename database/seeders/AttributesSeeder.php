@@ -38,7 +38,7 @@ class AttributesSeeder extends Seeder
         AttributeValueDescription::query()->truncate();
         ProductAttribute::query()->truncate();
 
-        // 属性组
+
         $attributeGroupsNumber = 4;
         for ($i = 1; $i <= $attributeGroupsNumber; $i++) {
             AttributeGroup::query()->create([
@@ -46,7 +46,7 @@ class AttributesSeeder extends Seeder
             ]);
         }
 
-        // 属性组描述
+
         $items = $this->getGroupDescriptions();
         AttributeGroupDescription::query()->insert(
             collect($items)->map(function ($item) {
@@ -56,7 +56,7 @@ class AttributesSeeder extends Seeder
             })->toArray()
         );
 
-        // 属性
+
         $items = $this->getAttributes();
         Attribute::query()->insert(
             collect($items)->map(function ($item) {
@@ -66,7 +66,7 @@ class AttributesSeeder extends Seeder
             })->toArray()
         );
 
-        // 属性描述
+
         $items = $this->getAttributeDescriptions();
         AttributeDescription::query()->insert(
             collect($items)->map(function ($item) {
@@ -76,7 +76,7 @@ class AttributesSeeder extends Seeder
             })->toArray()
         );
 
-        // 属性值
+
         $items = $this->getAttributeValues();
         AttributeValue::query()->insert(
             collect($items)->map(function ($item) {
@@ -86,7 +86,7 @@ class AttributesSeeder extends Seeder
             })->toArray()
         );
 
-        // 属性值描述
+
         $items = $this->getAttributeValueDescriptions();
         AttributeValueDescription::query()->insert(
             collect($items)->map(function ($item) {
@@ -96,7 +96,7 @@ class AttributesSeeder extends Seeder
             })->toArray()
         );
 
-        // 产品属性关联
+
         $items = $this->productAttributes();
         ProductAttribute::query()->insert(
             collect($items)->map(function ($item) {

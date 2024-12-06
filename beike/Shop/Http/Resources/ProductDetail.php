@@ -59,7 +59,7 @@ class ProductDetail extends JsonResource
     }
 
     /**
-     * 处理多规格商品数据
+     *
      *
      * @param $variables
      * @return array|array[]

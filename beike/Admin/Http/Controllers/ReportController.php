@@ -26,9 +26,9 @@ class ReportController extends Controller
         $data = [
             'statuses_selected'        => $statuses,
             'statuses'                 => StateMachineService::getAllStatuses(),
-            'quantity_by_products'     => OrderReportRepo::getSaleInfoByProducts('total_quantity', $filter)->toArray(), // 商品销量排行
-            'amount_by_products'       => OrderReportRepo::getSaleInfoByProducts('total_amount', $filter)->toArray(), // 商品金额排行
-            'amount_by_customers'      => OrderReportRepo::getSaleInfoByCustomers('order_amount', $filter)->toArray(),  // 用户购买金额排行
+            'quantity_by_products'     => OrderReportRepo::getSaleInfoByProducts('total_quantity', $filter)->toArray(),
+            'amount_by_products'       => OrderReportRepo::getSaleInfoByProducts('total_amount', $filter)->toArray(),
+            'amount_by_customers'      => OrderReportRepo::getSaleInfoByCustomers('order_amount', $filter)->toArray(),
             'order_trends'             => [
                 'latest_month' => OrderReportRepo::getLatestMonth($statuses),
                 'latest_year'  => OrderReportRepo::getLatestYear($statuses),

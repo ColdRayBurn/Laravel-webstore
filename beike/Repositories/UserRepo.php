@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Hash;
 class UserRepo
 {
     /**
-     * 创建一个记录
+     *
      * @param $data
      * @return int
      */

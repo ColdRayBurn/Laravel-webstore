@@ -135,7 +135,7 @@
     },
 
     computed: {
-      // 编辑中的模块编辑组件
+
       editingModuleComponent() {
         if (!this.editingModuleCode) {
           return false;
@@ -144,7 +144,7 @@
         return 'module-editor-' + this.editingModuleCode.replace('_', '-');
       },
 
-      // 编辑中的模块 code
+
       editingModuleCode() {
         if (this.form.modules.length === 0) {
           return false;

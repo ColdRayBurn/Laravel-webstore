@@ -23,7 +23,7 @@ class AdminLoginTest extends DuskTestCase
      * @return void
      */
 
-    //场景1 email不合法
+
     public function testEmailIllegal()
     {
         $this->browse(function (Browser $browser) {
@@ -35,7 +35,7 @@ class AdminLoginTest extends DuskTestCase
         });
     }
 
-    //场景2 email不存在
+
     public function testEmailFalse()
     {
         $this->browse(function (Browser $browser) {
@@ -47,7 +47,7 @@ class AdminLoginTest extends DuskTestCase
         });
     }
 
-    //场景3 密码错误
+
     public function testPwdFalse()
     {
         $this->browse(function (Browser $browser) {
@@ -59,7 +59,7 @@ class AdminLoginTest extends DuskTestCase
         });
     }
 
-    //场景4 只输入email
+
     public function testOnlyEmail()
     {
         $this->browse(function (Browser $browser) {
@@ -70,7 +70,7 @@ class AdminLoginTest extends DuskTestCase
         });
     }
 
-    //场景5 只输入密码
+
     public function testOnlyPwd()
     {
         $this->browse(function (Browser $browser) {
@@ -81,7 +81,7 @@ class AdminLoginTest extends DuskTestCase
         });
     }
 
-    //场景6 成功登录
+
     public function testLoginFul()
     {
         $this->browse(function (Browser $browser) {

@@ -22,7 +22,7 @@ class RegisterFirst extends DuskTestCase
      * A basic browser test example.
      */
 
-    //1.先单独注册一个账号
+
     public function testLoginFirst()
     {
         $this->browse(function (Browser $browser) {

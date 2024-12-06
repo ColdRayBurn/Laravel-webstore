@@ -70,7 +70,7 @@
         addresses: @json($addresses ?? []),
       },
 
-      // 实例被挂载后调用
+
       mounted() {},
 
       methods: {

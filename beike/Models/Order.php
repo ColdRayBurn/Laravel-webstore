@@ -93,7 +93,7 @@ class Order extends Base
     }
 
     /**
-     * 获取该订单可以变更的状态
+     *
      *
      * @return array
      * @throws \Exception
@@ -104,7 +104,7 @@ class Order extends Base
     }
 
     /**
-     * 获取订单所有商品名称并用;分割, 如果网站名称超出长度则只保留产品名称
+     * ;,
      *
      * @param int $length
      * @return string
@@ -132,7 +132,7 @@ class Order extends Base
     }
 
     /**
-     * 新订单通知
+     *
      */
     public function notifyNewOrder()
     {
@@ -145,7 +145,7 @@ class Order extends Base
     }
 
     /**
-     * 订单状态更新通知
+     *
      */
     public function notifyUpdateOrder($fromCode)
     {

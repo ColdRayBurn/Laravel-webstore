@@ -60,7 +60,7 @@ class ShopServiceProvider extends ServiceProvider
     }
 
     /**
-     * 注册前端客户
+     *
      */
     protected function registerGuard()
     {
@@ -76,7 +76,7 @@ class ShopServiceProvider extends ServiceProvider
     }
 
     /**
-     * 注册上传文件系统
+     *
      */
     protected function registerFileSystem()
     {
@@ -97,7 +97,7 @@ class ShopServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载邮件配置, 从后台 mail 取值, 并覆盖到  config/mail 和 config/services
+     * ,  mail ,   config/mail  config/services
      */
     protected function loadMailConfig()
     {
@@ -124,7 +124,7 @@ class ShopServiceProvider extends ServiceProvider
     }
 
     /**
-     * 从后台获取CDN url 并注册
+     * CDN url
      *
      * @return void
      */
@@ -138,7 +138,7 @@ class ShopServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载主体模板路径
+     *
      */
     protected function loadThemeViewPath()
     {
@@ -154,7 +154,7 @@ class ShopServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载视图组件
+     *
      */
     protected function loadComponents()
     {

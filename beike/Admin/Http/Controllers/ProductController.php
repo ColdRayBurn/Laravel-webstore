@@ -198,7 +198,7 @@ class ProductController extends Controller
     }
 
     /**
-     * 根据商品ID批量获取商品名称
+     * ID
      *
      * @param Request $request
      * @return JsonResponse

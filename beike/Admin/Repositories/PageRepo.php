@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\DB;
 class PageRepo
 {
     /**
-     * 获取列表页数据
+     *
      *
      * @return LengthAwarePaginator
      */
@@ -128,7 +128,7 @@ class PageRepo
     }
 
     /**
-     * 根据文章 IDs 获取文章
+     *  IDs
      * @param $pageIds
      * @return AnonymousResourceCollection
      */
@@ -144,7 +144,7 @@ class PageRepo
     }
 
     /**
-     * 页面内容自动完成
+     *
      *
      * @param $name
      * @return array

@@ -23,7 +23,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     /**
-     * 显示单页列表
+     *
      *
      * @return mixed
      */
@@ -39,7 +39,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 创建页面
+     *
      *
      * @return mixed
      */
@@ -49,7 +49,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 保存新建
+     *
      *
      * @param PageRequest $request
      * @return RedirectResponse
@@ -86,7 +86,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 保存更新
+     *
      *
      * @param PageRequest $request
      * @param int         $pageId
@@ -107,7 +107,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 删除单页
+     *
      *
      * @param Request $request
      * @param int     $pageId
@@ -123,7 +123,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 搜索页面标题自动完成
+     *
      * @param Request $request
      * @return JsonResponse
      */
@@ -135,7 +135,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 根据文章ID批量获取文章名称
+     * ID
      *
      * @param Request $request
      * @return JsonResponse
@@ -150,7 +150,7 @@ class PagesController extends Controller
     }
 
     /**
-     * 获取单页名称
+     *
      * @param Page $page
      * @return JsonResponse
      */

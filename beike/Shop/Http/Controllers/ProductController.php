@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     /**
-     * 商品详情页
+     *
      * @param Request $request
      * @param Product $product
      * @return mixed
@@ -33,7 +33,7 @@ class ProductController extends Controller
     }
 
     /**
-     * 通过关键字搜索商品
+     *
      *
      * @param Request $request
      * @return mixed

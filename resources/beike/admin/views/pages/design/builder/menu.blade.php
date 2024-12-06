@@ -178,19 +178,19 @@
       },
 
       computed: {
-        // 当前正在编辑的菜单
+
         currentMenu: function() {
-          // 强制刷新视图
+
           this.$forceUpdate();
           return this.form.menus[this.currentMenuIndex] || null;
         },
       },
 
       watch: {
-        // 深度监听菜单数据变化
+
         currentMenu: {
           handler: function(val) {
-            // 强制刷新
+
             this.$forceUpdate();
             // this.form.menus[this.currentMenuIndex] = this.currentMenu
           },

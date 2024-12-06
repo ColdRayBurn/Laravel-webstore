@@ -79,7 +79,7 @@ class ForgottenNotification extends Notification implements ShouldQueue
     }
 
     /**
-     * 保存到 DB
+     *  DB
      * @return Customer[]
      */
     public function toDatabase()

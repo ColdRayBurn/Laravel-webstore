@@ -20,16 +20,16 @@ use Illuminate\Support\Facades\Log;
 class AccountService
 {
     /**
-     * 注册用户
+     *
      *
      * @param array $data // ['email', 'password']
      * @return mixed
      */
     public static function register(array $data)
     {
-        $customerApproved            = system_setting('base.customer_approved', 0); // approve_customer为是否需要审核客户
+        $customerApproved            = system_setting('base.customer_approved', 0);
 
-        $data['customer_group_id'] = system_setting('base.default_customer_group_id', 0); // default_customer_group_id为默认客户组名称
+        $data['customer_group_id'] = system_setting('base.default_customer_group_id', 0);
         $data['from']              = $data['from'] ?? 'pc';
         $data['locale']            = locale();
 
@@ -56,7 +56,7 @@ class AccountService
     }
 
     /**
-     * 发送验证码通过$type方式，type为email或telephone
+     * $type，typeemailtelephone
      * @param $email
      * @param $type
      * @return void
@@ -77,11 +77,11 @@ class AccountService
     }
 
     /**
-     * 验证验证码是否正确，并修改密码为新密码
+     * ，
      * @param        $code
      * @param        $account
      * @param        $password
-     * @param string $type     $account类型，email代表$account为邮箱地址，telephone代表$account为手机号码
+     * @param string $type     $account，email$account，telephone$account
      * @return void
      * @throws \Exception
      */

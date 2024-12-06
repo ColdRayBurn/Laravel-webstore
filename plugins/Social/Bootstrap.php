@@ -53,7 +53,7 @@ class Bootstrap
     }
 
     /**
-     * 增加第三方登录方式
+     *
      */
     private function addSocialData(): void
     {

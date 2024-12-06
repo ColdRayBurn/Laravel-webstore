@@ -24,7 +24,7 @@ class BrandRepo
     private static $allBrandsWithName;
 
     /**
-     * 创建一个记录
+     *
      * @param $data
      * @return Builder|Model
      */
@@ -104,7 +104,7 @@ class BrandRepo
     }
 
     /**
-     * 获取商品品牌筛选builder
+     * builder
      * @param array $filters
      * @return Builder
      */
@@ -167,7 +167,7 @@ class BrandRepo
     }
 
     /**
-     * 通过商品ID获取商品列表
+     * ID
      * @return array|Builder[]|Collection
      */
     public static function getListByIds($ids)
@@ -184,7 +184,7 @@ class BrandRepo
     }
 
     /**
-     * 通过品牌ID获取品牌名称
+     * ID
      * @param $brand
      * @return mixed|string
      */
@@ -197,7 +197,7 @@ class BrandRepo
     }
 
     /**
-     * 获取所有商品分类ID和名称列表
+     * ID
      * @return array|null
      */
     public static function getAllBrandsWithName(): ?array

@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 class OrderController extends Controller
 {
     /**
-     * 获取当前客户订单列表
+     *
      *
      * @param Request $request
      * @return View
@@ -42,7 +42,7 @@ class OrderController extends Controller
     }
 
     /**
-     * 获取当前客户订单列表
+     *
      *
      * @param Request $request
      * @param         $number
@@ -58,7 +58,7 @@ class OrderController extends Controller
     }
 
     /**
-     * 订单支付页面
+     *
      *
      * @param Request $request
      * @param         $number
@@ -79,7 +79,7 @@ class OrderController extends Controller
     }
 
     /**
-     * 完成订单
+     *
      *
      * @param Request $request
      * @param         $number
@@ -100,7 +100,7 @@ class OrderController extends Controller
     }
 
     /**
-     * 取消订单
+     *
      *
      * @param Request $request
      * @param         $number

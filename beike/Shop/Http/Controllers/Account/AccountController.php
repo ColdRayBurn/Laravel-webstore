@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Hash;
 class AccountController extends Controller
 {
     /**
-     * 个人中心首页
+     *
      * @return mixed
      * @throws \Exception
      */
@@ -39,7 +39,7 @@ class AccountController extends Controller
     }
 
     /**
-     * 修改密码，提交 "origin_password"、"password", "password_confirmation", 验证新密码和确认密码相等，且原密码正确则修改密码
+     * ， "origin_password"、"password", "password_confirmation", ，
      * @param ForgottenRequest $request
      * @return JsonResponse
      * @throws \Exception

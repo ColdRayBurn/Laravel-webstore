@@ -1,6 +1,6 @@
 <?php
 /**
- * 创建购物车商品记录
+ *
  * \Beike\Models\CartProduct::factory(300)->create(['customer_id'=>2])
  */
 

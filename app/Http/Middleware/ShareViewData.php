@@ -50,7 +50,7 @@ class ShareViewData
     }
 
     /**
-     * 处理后台语言包列表
+     *
      *
      * @return array
      */

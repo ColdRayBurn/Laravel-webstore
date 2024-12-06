@@ -34,7 +34,7 @@ class CountryRepo
     }
 
     /**
-     * 创建一个country记录
+     * country
      * @param $data
      * @return mixed
      */
@@ -124,7 +124,7 @@ class CountryRepo
     }
 
     /**
-     * 获取已启用国家列表
+     *
      * @return Builder[]|Collection
      */
     public static function listEnabled(): Collection|array
@@ -133,7 +133,7 @@ class CountryRepo
     }
 
     /**
-     * 获取所有国家列表
+     *
      * @return Builder[]|Collection
      */
     public static function all()

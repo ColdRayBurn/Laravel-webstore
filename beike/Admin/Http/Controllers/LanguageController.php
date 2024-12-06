@@ -20,7 +20,7 @@ use Illuminate\Http\Request;
 class LanguageController extends Controller
 {
     /**
-     * 语言列表
+     *
      * @return mixed
      */
     public function index()
@@ -36,7 +36,7 @@ class LanguageController extends Controller
     }
 
     /**
-     * 新建语言
+     *
      * @param Request $request
      * @return JsonResponse
      */
@@ -61,7 +61,7 @@ class LanguageController extends Controller
     }
 
     /**
-     * 删除语言
+     *
      *
      * @param int $id
      * @return JsonResponse

@@ -19,7 +19,7 @@ body.page-filemanager {
   height: 100vh;
   overflow: hidden;
   font-size: 12px;
-  user-select:none; /* CSS3属性 */
+  user-select:none; /* CSS3 */
 
   [class*=" el-icon-"], [class^=el-icon-] {
     font-weight: 600;
@@ -358,7 +358,7 @@ body.page-filemanager {
       margin-right: -4px;
       padding-right: 6px;
 
-      // 滚动条 透明背景
+
       &::-webkit-scrollbar {
         width: 8px;
         height: 1px;

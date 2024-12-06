@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', system_setting('base.meta_title', 'BeikeShop开源好用的跨境电商系统'))</title>
+  <title>@yield('title', system_setting('base.meta_title', 'Shop'))</title>
   <meta name="keywords" content="@yield('keywords', system_setting('base.meta_keywords'))">
   <meta name="description" content="@yield('description', system_setting('base.meta_description'))">
   <meta name="generator" content="BeikeShop v{{ config('beike.version') }}({{ config('beike.build') }})">
@@ -42,7 +42,7 @@
       loginShowPrice: !!{{ system_setting('base.show_price_after_login', 0) }},
     }
 
-    // 如果页面使用了ElementUI，且当前语言不是中文，则加载对应的语言包
+
     @if (locale() != 'zh_cn')
     if (typeof ELEMENT !== 'undefined') {
         const elLocale = '{{ asset('vendor/element-ui/language/'.locale().'.js') }}';

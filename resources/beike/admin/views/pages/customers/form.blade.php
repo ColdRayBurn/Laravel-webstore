@@ -216,7 +216,7 @@
         }
       },
 
-      // 在挂载开始之前被调用:相关的 render 函数首次被调用
+
       beforeMount() {
         this.countryChange(this.dialogAddress.form.country_id);
       },

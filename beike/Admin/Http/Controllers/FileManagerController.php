@@ -19,7 +19,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 获取文件夹和文件列表
+     *
      * @return mixed
      * @throws Exception
      */
@@ -32,7 +32,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 获取某个文件夹下面的文件列表
+     *
      *
      * @param Request $request
      * @return mixed
@@ -53,7 +53,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 获取文件夹列表
+     *
      * @param Request $request
      * @return mixed
      */
@@ -67,7 +67,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 创建文件夹
+     *
      * POST      /admin/file_manager
      * @throws Exception
      */
@@ -84,7 +84,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 文件或文件夹改名
+     *
      * PUT       /admin/file_manager/rename
      * @throws Exception
      */
@@ -102,7 +102,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 删除文件或文件夹
+     *
      * DELETE    /admin/file_manager/files  {"path":"/xx/yy", "files":["1.jpg", "2.png"]}
      * @throws Exception
      */
@@ -121,7 +121,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 删除文件夹
+     *
      *
      * @param Request $request
      * @return JsonResponse
@@ -140,7 +140,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 移动目录
+     *
      *
      * @param Request $request
      * @return JsonResponse
@@ -159,7 +159,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 移动多个图片文件
+     *
      *
      * @param Request $request
      * @return JsonResponse
@@ -178,7 +178,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 压缩文件夹下载ZIP
+     * ZIP
      *
      * @param Request $request
      */
@@ -200,7 +200,7 @@ class FileManagerController extends Controller
     }
 
     /**
-     * 上传文件
+     *
      * POST      /admin/file_manager/upload
      *
      * @param UploadRequest $request

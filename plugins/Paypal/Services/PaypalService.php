@@ -59,7 +59,7 @@ class PaypalService extends PaymentService
     }
 
     /**
-     * 获取支付参数给 uniapp 使用
+     *  uniapp
      * @return array
      * @throws \Throwable
      */

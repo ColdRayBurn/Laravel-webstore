@@ -83,7 +83,7 @@ return [
     'move_down'                        => '下移',
     'move_up'                          => '上移',
 
-    // 固定连接
+
     'text_static_product_latest'       => '最新商品',
     'text_static_product_special'      => '特價商品',
     'text_static_product_manufacturer' => '品牌專區',

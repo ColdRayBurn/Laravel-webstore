@@ -8,7 +8,7 @@
       exports: {}
     };
     factory(mod, mod.exports);
-    global.ELEMENT.lang = global.ELEMENT.lang || {}; 
+    global.ELEMENT.lang = global.ELEMENT.lang || {};
     global.ELEMENT.lang.ja = mod.exports;
   }
 })(this, function (module, exports) {
@@ -50,7 +50,7 @@
         month10: '10月',
         month11: '11月',
         month12: '12月',
-        // week: '週次',
+
         weeks: {
           sun: '日',
           mon: '月',

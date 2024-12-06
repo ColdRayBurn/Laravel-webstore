@@ -36,7 +36,7 @@ class ThemeSeeder extends Seeder
     }
 
     /**
-     * 设置头部菜单数据
+     *
      *
      * @return array
      * @throws \Exception
@@ -746,7 +746,7 @@ class ThemeSeeder extends Seeder
     }
 
     /**
-     * 设置首页装修数据
+     *
      *
      * @return mixed
      * @throws \Exception
@@ -1035,7 +1035,7 @@ class ThemeSeeder extends Seeder
 
 
     /**
-     * 设置底部装修数据
+     *
      */
     private function getFooterSetting(): array
     {

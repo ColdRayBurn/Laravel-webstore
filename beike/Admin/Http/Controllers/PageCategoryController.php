@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 class PageCategoryController extends Controller
 {
     /**
-     * 显示文章分类列表
+     *
      *
      * @return mixed
      */
@@ -40,7 +40,7 @@ class PageCategoryController extends Controller
     }
 
     /**
-     * 创建文章分类
+     *
      *
      * @return mixed
      */
@@ -50,7 +50,7 @@ class PageCategoryController extends Controller
     }
 
     /**
-     * 保存新建
+     *
      *
      * @param PageCategoryRequest $request
      * @return RedirectResponse
@@ -91,7 +91,7 @@ class PageCategoryController extends Controller
     }
 
     /**
-     * 保存更新
+     *
      *
      * @param PageCategoryRequest $request
      * @param PageCategory        $pageCategory
@@ -114,7 +114,7 @@ class PageCategoryController extends Controller
     }
 
     /**
-     * 删除单页
+     *
      *
      * @param Request $request
      * @param int     $pageId
@@ -129,7 +129,7 @@ class PageCategoryController extends Controller
     }
 
     /**
-     * 搜索页面标题自动完成
+     *
      * @param Request $request
      * @return JsonResponse
      */
@@ -141,7 +141,7 @@ class PageCategoryController extends Controller
     }
 
     /**
-     * 获取单页名称
+     *
      * @param PageCategory $pageCategory
      * @return JsonResponse
      */

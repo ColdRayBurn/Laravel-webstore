@@ -20,7 +20,7 @@ use Symfony\Component\HttpKernel\Exception\NotAcceptableHttpException;
 class CustomerGroupRepo
 {
     /**
-     * 创建一个CustomerGroup记录
+     * CustomerGroup
      * @param $data
      * @return Builder|Model
      */
@@ -72,7 +72,7 @@ class CustomerGroupRepo
     }
 
     /**
-     * 获取用户组列表
+     *
      *
      * @return Builder[]|Collection
      */

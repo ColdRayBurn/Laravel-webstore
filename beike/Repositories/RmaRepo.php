@@ -24,7 +24,7 @@ use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 class RmaRepo
 {
     /**
-     * 创建一个记录
+     *
      * @param $data
      * @return Builder|Model
      */

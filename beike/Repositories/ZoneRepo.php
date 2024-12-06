@@ -31,7 +31,7 @@ class ZoneRepo
     }
 
     /**
-     * 创建一个zone记录
+     * zone
      * @param $data
      * @return mixed
      */
@@ -106,7 +106,7 @@ class ZoneRepo
     }
 
     /**
-     * 根据国家获取国家的省份
+     *
      * @param $country
      * @return \Illuminate\Database\Eloquent\HigherOrderBuilderProxy|\Illuminate\Support\HigherOrderCollectionProxy|mixed|void
      */
@@ -121,7 +121,7 @@ class ZoneRepo
     }
 
     /**
-     * 通过国家ID获取省份拉下选项
+     * ID
      *
      * @param $countryId
      * @return array

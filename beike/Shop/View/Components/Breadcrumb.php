@@ -68,7 +68,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取分类以及路径
+     *
      *
      * @param $value
      * @return array
@@ -87,7 +87,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取商品以及分类路径
+     *
      *
      * @param $value
      * @return array
@@ -116,7 +116,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取订单详情页面包屑
+     *
      *
      * @param $value
      * @return array
@@ -148,7 +148,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取订单详情页面包屑
+     *
      *
      * @param $value
      * @return array
@@ -180,7 +180,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取文章页面包屑
+     *
      *
      * @param $value
      * @return array
@@ -214,7 +214,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取文章页面包屑
+     *
      *
      * @param $value
      * @return array
@@ -244,7 +244,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 处理个人中心面包屑
+     *
      *
      * @param $value
      * @return array[]
@@ -273,7 +273,7 @@ class Breadcrumb extends Component
     }
 
     /**
-     * 获取普通链接
+     *
      *
      * @param       $type
      * @param       $value

@@ -31,7 +31,7 @@ class HomeController extends Controller
     }
 
     /**
-     * 通过关键字搜索菜单
+     *
      *
      * @return array
      */

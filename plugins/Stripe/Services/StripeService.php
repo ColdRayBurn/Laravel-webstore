@@ -20,7 +20,7 @@ use Stripe\StripeClient;
 
 class StripeService extends PaymentService
 {
-    // 零位十进制货币 https://stripe.com/docs/currencies#special-cases
+    // https://stripe.com/docs/currencies#special-cases
     public const ZERO_DECIMAL = [
         'BIF', 'CLP', 'DJF', 'GNF', 'JPY', 'KMF', 'KRW', 'MGA',
         'PYG', 'RWF', 'UGX', 'VND', 'VUV', 'XAF', 'XOF', 'XPF',
@@ -76,24 +76,24 @@ class StripeService extends PaymentService
             return $charge['paid'] && $charge['captured'];
         } else {
             // app
-            // 从返回的 client_secret 中提取 payment_intent_id
+
             $clientSecret = $creditCardData['paymentIntent'] ?? '';
             if (empty($clientSecret)) {
                 throw new \Exception('Invalid paymentIntent');
             }
 
-            // 提取 payment_intent_id (前缀到第一个 '_secret' 之前的部分)
+
             $paymentIntentId = substr($clientSecret, 0, strpos($clientSecret, '_secret'));
 
-            // 检查是否成功提取 payment_intent_id
+
             if (empty($paymentIntentId)) {
                 throw new \Exception('Invalid paymentIntent ID');
             }
 
-            // 根据 PaymentIntent ID 查询支付状态
+
             $paymentIntent = $this->stripeClient->paymentIntents->retrieve($paymentIntentId);
 
-            // 检查支付状态
+
             if ($paymentIntent->status === 'succeeded') {
                 return true;
             }
@@ -103,7 +103,7 @@ class StripeService extends PaymentService
     }
 
     /**
-     * 创建 stripe customer
+     *  stripe customer
      * @param string $source
      * @return Customer
      * @throws ApiErrorException
@@ -159,7 +159,7 @@ class StripeService extends PaymentService
     }
 
     /**
-     * 获取支付参数给 uniapp 使用
+     *  uniapp
      * @return array
      * @throws ApiErrorException
      */
@@ -178,7 +178,7 @@ class StripeService extends PaymentService
     }
 
     /**
-     * 获取支付地址
+     *
      *
      * @return array
      */

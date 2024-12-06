@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Log;
 class UserService
 {
     /**
-     * 发送验证码通过$type方式，type为email或telephone
+     * $type，typeemailtelephone
      * @param $email
      * @return void
      */
@@ -39,7 +39,7 @@ class UserService
     }
 
     /**
-     * 验证验证码是否正确，并修改密码为新密码
+     * ，
      * @param $code
      * @param $account
      * @param $password

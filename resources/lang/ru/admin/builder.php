@@ -82,7 +82,7 @@ return [
     'move_down'                        => 'переместиться вниз',
     'move_up'                          => 'движение вверх',
 
-    // 固定连接
+
     'text_static_product_latest'       => 'Последний продукт',
     'text_static_product_special'      => 'особый продукт',
     'text_static_product_manufacturer' => 'зона бренда',

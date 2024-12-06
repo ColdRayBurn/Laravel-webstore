@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
 class RmaService
 {
     /**
-     * 创建RMA
+     * RMA
      *
      * @param $data
      * @return Model|Builder

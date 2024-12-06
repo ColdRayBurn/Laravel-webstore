@@ -11,7 +11,7 @@ use Illuminate\View\View;
 class DesignController extends Controller
 {
     /**
-     * 展示所有模块编辑器
+     *
      *
      * @param Request $request
      * @return View
@@ -32,7 +32,7 @@ class DesignController extends Controller
     }
 
     /**
-     * 预览模块显示结果
+     *
      *
      * @param Request $request
      * @return View
@@ -64,7 +64,7 @@ class DesignController extends Controller
     }
 
     /**
-     * 更新所有数据
+     *
      *
      * @param Request $request
      * @return JsonResponse

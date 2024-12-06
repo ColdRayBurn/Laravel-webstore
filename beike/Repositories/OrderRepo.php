@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
 class OrderRepo
 {
     /**
-     * 获取所有客户订单列表
+     *
      *
      * @param array $filters
      * @return Builder[]|Collection
@@ -37,7 +37,7 @@ class OrderRepo
     }
 
     /**
-     * 获取特定客户订单列表
+     *
      *
      * @param null $customer
      * @return LengthAwarePaginator
@@ -131,18 +131,18 @@ class OrderRepo
             $builder->whereIn('status', $statuses);
         }
 
-        // 回收站
+
         if (isset($filters['trashed']) && $filters['trashed']) {
             $builder->onlyTrashed();
         }
-        
+
         $builder = hook_filter('admin.order.repo.list.builder.after', $builder);
-        
+
         return $builder;
     }
 
     /**
-     * 通过订单号获取订单
+     *
      *
      * @param $number
      * @param $customer
@@ -169,7 +169,7 @@ class OrderRepo
     }
 
     /**
-     * 通过订单ID或者订单号获取订单
+     * ID
      *
      * @param $number
      * @param $customer
@@ -294,7 +294,7 @@ class OrderRepo
     }
 
     /**
-     * 生成订单号
+     *
      *
      * @return string
      */

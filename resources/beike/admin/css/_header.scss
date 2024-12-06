@@ -150,7 +150,7 @@
           font-size: 14px;
           background-color: transparent;
           height: 40px;
-          // 设置 placeholder 颜色
+
           &::-webkit-input-placeholder {
             color: #7b8996;
           }
@@ -185,7 +185,7 @@
           overflow-x: hidden;
           display: none;
 
-          // 修改滚动条样式
+
           &::-webkit-scrollbar {
             width: 8px;
             height: 6px;

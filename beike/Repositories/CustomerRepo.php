@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Hash;
 class CustomerRepo
 {
     /**
-     * 创建一个customer记录
+     * customer
      * @param $customerData
      * @return Model
      */
@@ -111,7 +111,7 @@ class CustomerRepo
     }
 
     /**
-     * 获取筛选对象
+     *
      *
      * @param array $filters
      * @return Builder
@@ -170,7 +170,7 @@ class CustomerRepo
     }
 
     /**
-     * @param $customer  ,  Customer对象或id
+     * @param $customer  ,  Customerid
      * @param $productId
      * @return Customer|Builder|Builder[]|Collection|Model|mixed|null
      */
@@ -188,7 +188,7 @@ class CustomerRepo
     }
 
     /**
-     * @param $customer , Customer对象或id
+     * @param $customer , Customerid
      * @param $id
      * @return void
      */
@@ -214,8 +214,8 @@ class CustomerRepo
     }
 
     /**
-     * @param $product  , 商品id或对象
-     * @param $customer , 顾客id或对象
+     * @param $product  , id
+     * @param $customer , id
      * @return int
      */
     public static function inWishlist($product, $customer)

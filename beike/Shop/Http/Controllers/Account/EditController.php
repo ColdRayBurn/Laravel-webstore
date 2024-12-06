@@ -28,7 +28,7 @@ class EditController extends Controller
     }
 
     /**
-     * 顾客修改个人信息
+     *
      * @param EditRequest $request
      * @return RedirectResponse
      */

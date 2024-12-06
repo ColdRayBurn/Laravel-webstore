@@ -19,7 +19,7 @@ use Illuminate\Http\Request;
 class BrandController
 {
     /**
-     * 显示品牌列表
+     *
      * @param Request $request
      * @return mixed
      */
@@ -34,7 +34,7 @@ class BrandController
     }
 
     /**
-     * 创建品牌
+     *
      *
      * @param Request $request
      * @param Brand   $brand
@@ -46,7 +46,7 @@ class BrandController
     }
 
     /**
-     * 创建品牌
+     *
      *
      * @param Request $request
      * @return JsonResponse

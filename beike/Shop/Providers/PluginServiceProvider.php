@@ -68,7 +68,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 调用插件 Bootstrap::boot()
+     *  Bootstrap::boot()
      *
      * @param $plugin
      */
@@ -85,7 +85,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载插件数据库迁移脚本
+     *
      *
      * @param $pluginCode
      */
@@ -147,7 +147,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载多语言
+     *
      */
     private function loadTranslations($pluginCode)
     {
@@ -156,7 +156,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载模板目录
+     *
      *
      * @param $pluginCode
      */
@@ -167,7 +167,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 注册插件定义的中间件
+     *
      */
     private function registerMiddleware($pluginCode)
     {
@@ -192,7 +192,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 获取插件中间件
+     *
      * @param $path
      * @return array
      */
@@ -218,7 +218,7 @@ class PluginServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载插件内首页 page builder 相关组件
+     *  page builder
      *
      * @throws \Exception
      */

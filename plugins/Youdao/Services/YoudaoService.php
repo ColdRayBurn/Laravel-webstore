@@ -37,7 +37,7 @@ class YoudaoService implements TranslatorService
     }
 
     /**
-     * 批量翻译
+     *
      *
      * @param $from
      * @param $to

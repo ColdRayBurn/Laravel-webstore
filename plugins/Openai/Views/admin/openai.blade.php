@@ -83,7 +83,7 @@
         loadQuantities();
       @endif
       loadHistories(1 , function() {
-        // 获取 answer .answer-list 内容高度
+
         let height = 0;
         $('.answer-list').each(function() {
           height += $(this).height();
@@ -184,7 +184,7 @@
           if (data.data && data.data.length) {
             $('.not-answer').remove();
 
-            // data.data 倒叙
+
             data.data.reverse();
 
             let html = '';

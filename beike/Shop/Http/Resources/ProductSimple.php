@@ -17,7 +17,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class ProductSimple extends JsonResource
 {
     /**
-     * 图片列表页Item
+     * Item
      *
      * @param Request $request
      * @return array

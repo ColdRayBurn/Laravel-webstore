@@ -20,7 +20,7 @@ use Illuminate\Support\Str;
 use TorMorten\Eventy\Facades\Eventy;
 
 /**
- * 获取后台设置到 settings 表的值
+ *  settings
  *
  * @param      $key
  * @param null $default
@@ -32,7 +32,7 @@ function setting($key, $default = null)
 }
 
 /**
- * 获取系统 settings
+ *  settings
  *
  * @param      $key
  * @param null $default
@@ -44,7 +44,7 @@ function system_setting($key, $default = null)
 }
 
 /**
- * 获取后台设置到 settings 表的值
+ *  settings
  *
  * @param      $key
  * @param null $default
@@ -56,10 +56,10 @@ function plugin_setting($key, $default = null)
 }
 
 /**
- * 获取插件静态文件
  *
- * @param $code     , 插件编码
- * @param $filePath , 相对于插件目录 static 的文件路径
+ *
+ * @param $code     ,
+ * @param $filePath ,  static
  */
 function plugin_asset($code, $filePath): string
 {
@@ -67,7 +67,7 @@ function plugin_asset($code, $filePath): string
 }
 
 /**
- * 获取后台管理前缀名称, 默认为 admin
+ * ,  admin
  */
 function admin_name(): string
 {
@@ -81,7 +81,7 @@ function admin_name(): string
 }
 
 /**
- * 获取后台设置项
+ *
  */
 function load_settings()
 {
@@ -93,7 +93,7 @@ function load_settings()
 }
 
 /**
- * 获取后台链接
+ *
  *
  * @param       $route
  * @param mixed $params
@@ -107,7 +107,7 @@ function admin_route($route, $params = []): string
 }
 
 /**
- * 获取前台链接
+ *
  *
  * @param       $route
  * @param mixed $params
@@ -119,7 +119,7 @@ function shop_route($route, $params = []): string
 }
 
 /**
- * 获取 category, product, brand, page, static, custom 路由链接
+ *  category, product, brand, page, static, custom
  *
  * @param $type
  * @param $value
@@ -132,7 +132,7 @@ function type_route($type, $value): string
 }
 
 /**
- * 获取 category, product, brand, page, static, custom 链接名称
+ *  category, product, brand, page, static, custom
  *
  * @param       $type
  * @param       $value
@@ -145,7 +145,7 @@ function type_label($type, $value, array $texts = []): string
 }
 
 /**
- * 处理配置链接
+ *
  *
  * @param $link
  * @return array
@@ -164,7 +164,7 @@ function handle_link($link): array
 }
 
 /**
- * 是否访问的后端
+ *
  * @return bool
  */
 function is_admin(): bool
@@ -179,7 +179,7 @@ function is_admin(): bool
 }
 
 /**
- * 是否访问安装页面
+ *
  * @return bool
  */
 function is_installer(): bool
@@ -190,7 +190,7 @@ function is_installer(): bool
 }
 
 /**
- * 获取当前路由
+ *
  *
  * @return string
  */
@@ -200,7 +200,7 @@ function current_route(): string
 }
 
 /**
- * 是否为当前访问路由
+ *
  *
  * @param $routeName
  * @return bool
@@ -215,7 +215,7 @@ function equal_route($routeName): bool
 }
 
 /**
- * 获取后台当前登录用户
+ *
  *
  * @return mixed
  */
@@ -230,7 +230,7 @@ function current_user(): ?AdminUser
 }
 
 /**
- * 获取前台当前登录客户
+ *
  *
  * @return mixed
  */
@@ -245,7 +245,7 @@ function current_customer(): mixed
 }
 
 /**
- * 获取 session id
+ *  session id
  */
 function get_session_id(): string
 {
@@ -258,7 +258,7 @@ function get_session_id(): string
 }
 
 /**
- * 获取语言列表
+ *
  *
  * @return array
  */
@@ -275,7 +275,7 @@ function locales(): array
 }
 
 /**
- * 获取当前语言
+ *
  *
  * @return string
  */
@@ -297,7 +297,7 @@ function locale(): string
 }
 
 /**
- * 获取后台当前语言
+ *
  *
  * @return string
  */
@@ -311,7 +311,7 @@ function admin_locale(): string
 }
 
 /**
- * 货币格式化
+ *
  *
  * @param        $price
  * @param string $currency
@@ -329,7 +329,7 @@ function currency_format($price, string $currency = '', string $value = '', bool
 }
 
 /**
- * 获取指定货币汇率
+ *
  *
  * @return string
  */
@@ -341,7 +341,7 @@ function current_currency_rate(): float
 }
 
 /**
- * 时间格式化
+ *
  *
  * @param null $datetime
  * @return false|string
@@ -359,7 +359,7 @@ function time_format($datetime = null)
 }
 
 /**
- * 获取插件根目录
+ *
  *
  * @param string $path
  * @return string
@@ -379,7 +379,7 @@ function plugin($code): ?Plugin
 }
 
 /**
- * 插件图片缩放
+ *
  *
  * @param     $pluginCode
  * @param     $image
@@ -421,7 +421,7 @@ function plugin_origin($pluginCode, $image)
 }
 
 /**
- * 图片缩放
+ *
  *
  * @param     $image
  * @param int $width
@@ -439,7 +439,7 @@ function image_resize($image, int $width = 100, int $height = 100)
 }
 
 /**
- * 获取原图地址
+ *
  * @throws Exception
  */
 function image_origin($image)
@@ -452,7 +452,7 @@ function image_origin($image)
 }
 
 /**
- * 获取后台开启的所有语言
+ *
  *
  * @return Collection
  */
@@ -462,7 +462,7 @@ function languages(): Collection
 }
 
 /**
- * 当前语言名称
+ *
  *
  * @return string
  */
@@ -474,7 +474,7 @@ function current_language()
 }
 
 /**
- * 获取后台所有语言包列表
+ *
  *
  * @return array
  */
@@ -489,7 +489,7 @@ function admin_languages(): array
 }
 
 /**
- * 获取语言包列表
+ *
  * @return array
  */
 function language_packages(): array
@@ -508,7 +508,7 @@ function currencies()
 }
 
 /**
- * 获取当前货币
+ *
  *
  * @return string
  */
@@ -523,7 +523,7 @@ function current_currency_code(): string
 }
 
 /**
- * 获取当前货币
+ *
  *
  * @return string
  */
@@ -536,7 +536,7 @@ function current_currency_id(): string
 }
 
 /**
- * 数量格式化, 用于商品、订单统计
+ * , 、
  *
  * @param $quantity
  * @return mixed|string
@@ -558,7 +558,7 @@ function quantity_format($quantity)
 }
 
 /**
- * 返回json序列化结果
+ * json
  */
 function json_success($message, $data = []): JsonResponse
 {
@@ -572,7 +572,7 @@ function json_success($message, $data = []): JsonResponse
 }
 
 /**
- * 返回json序列化结果
+ * json
  */
 function json_fail($message, $data = [], $status = 422): JsonResponse
 {
@@ -606,7 +606,7 @@ if (! function_exists('sub_string')) {
 }
 
 /**
- * 根据 $builder 对象输出SQL语句
+ *  $builder SQL
  * @param mixed $builder
  * @return string|string[]|null
  */
@@ -622,7 +622,7 @@ function to_sql($builder): array|string|null
 }
 
 /**
- * 递归创建文件夹
+ *
  * @param $directoryPath
  */
 function create_directories($directoryPath)
@@ -638,7 +638,7 @@ function create_directories($directoryPath)
 }
 
 /**
- * 是否安装 debugbar
+ *  debugbar
  *
  * @return bool
  */
@@ -648,7 +648,7 @@ function has_debugbar(): bool
 }
 
 /**
- * PHP 代码 hook filter 埋点
+ * PHP  hook filter
  *
  * @param $hookKey
  * @param $hookValue
@@ -664,7 +664,7 @@ function hook_filter($hookKey, $hookValue): mixed
 }
 
 /**
- * PHP 代码 hook action 埋点
+ * PHP  hook action
  *
  * @param $hookKey
  * @param $hookValue
@@ -678,7 +678,7 @@ function hook_action($hookKey, $hookValue)
 }
 
 /**
- * 添加 Filter, 执行 PHP 逻辑
+ *  Filter,  PHP
  *
  * @param     $hookKey
  * @param     $callback
@@ -692,7 +692,7 @@ function add_hook_filter($hookKey, $callback, int $priority = 20, int $arguments
 }
 
 /**
- * 添加 Action, 执行 PHP 逻辑
+ *  Action,  PHP
  *
  * @param     $hookKey
  * @param     $callback
@@ -705,7 +705,7 @@ function add_hook_action($hookKey, $callback, int $priority = 20, int $arguments
 }
 
 /**
- * 采用 Hook 修改 Blade 代码
+ *  Hook  Blade
  *
  * @param     $hookKey
  * @param     $callback
@@ -717,7 +717,7 @@ function add_hook_blade($hookKey, $callback, int $priority = 0)
 }
 
 /**
- * 检测系统是否已安装
+ *
  *
  * @return bool
  */
@@ -727,7 +727,7 @@ function installed(): bool
 }
 
 /**
- * 是否为移动端访问
+ *
  *
  * @return bool
  */
@@ -737,7 +737,7 @@ function is_mobile(): bool
 }
 
 /**
- * 当前访问协议是否为 https
+ *  https
  *
  * @return bool
  */
@@ -759,7 +759,7 @@ function is_secure(): bool
 }
 
 /**
- * 每页商品显示数量
+ *
  *
  * @return int
  */
@@ -789,7 +789,7 @@ function registry($key, $default = null): mixed
 }
 
 /**
- * 处理域名, 去除协议前缀
+ * ,
  *
  * @param $domain
  * @return string
@@ -806,7 +806,7 @@ function clean_domain($domain): string
 
 /**
  * Check domain ha license.
- * 删除版权信息, 请先购买授权 https://beikeshop.com/vip/subscription
+ * ,  https://beikeshop.com/vip/subscription
  *
  * @return bool
  * @throws Exception
@@ -863,7 +863,7 @@ function zip_folder($sourceFolder, $zipPath): ZipArchive
 }
 
 /**
- * 移动文件夹
+ *
  *
  * @param $sourcePath
  * @param $destinationPath
@@ -887,7 +887,7 @@ function move_dir($sourcePath, $destinationPath)
 }
 
 /**
- * 是否有开启的翻译工具
+ *
  *
  * @return bool
  */
@@ -911,7 +911,7 @@ function beike_api_url(): string
 }
 
 /**
- * 检测当前访问域名和 .env 配置域名是否一致
+ *  .env
  *
  * @return bool
  */
@@ -941,33 +941,33 @@ function is_miniapp(): bool
 }
 
 /**
- * 返回当前域名的主域名
+ *
  * @param null $domain
  * @return string
  */
 function get_domain($domain = null)
 {
-    // 如果没有传入域名参数，则使用当前浏览器的域名
+
     if (!$domain) {
-        // 获取主机名并移除可能的端口号
+
         $domain = parse_url($_SERVER['HTTP_HOST'], PHP_URL_HOST) ?: $_SERVER['HTTP_HOST'];
     } else {
-        // 移除 URL 中的协议部分（如 http:// 或 https://）
+
         $domain = parse_url($domain, PHP_URL_HOST) ?: $domain;
     }
 
-    // 移除端口号
+
     $domain = preg_replace('/:\d+$/', '', $domain);
 
-    // 常见的多级顶级域名列表
+
     $known_tlds = array('co.uk', 'gov.uk', 'ac.uk', 'org.uk', 'com.au', 'net.au');
 
-    // 提取顶级域名部分
+
     $parts = explode('.', $domain);
     $count = count($parts);
 
     if ($count > 2) {
-        // 处理类似 'example.co.uk' 或 'sub.example.co.uk' 的域名
+
         $last_two = implode('.', array_slice($parts, -2));
         $last_three = implode('.', array_slice($parts, -3));
 
@@ -978,6 +978,6 @@ function get_domain($domain = null)
         }
     }
 
-    // 返回提取的主域名
+
     return implode('.', array_slice($parts, -2));
 }

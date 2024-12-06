@@ -82,7 +82,7 @@ return [
     'move_down'                        => '下に移動',
     'move_up'                          => '上に移動',
 
-    // 固定连接
+
     'text_static_product_latest'       => '最新の製品',
     'text_static_product_special'      => '特産品',
     'text_static_product_manufacturer' => 'ブランドエリア',

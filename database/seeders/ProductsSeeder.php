@@ -27,7 +27,7 @@ class ProductsSeeder extends Seeder
      */
     public function run()
     {
-        // 产品主表
+
         $products = $this->getProducts();
         if ($products) {
             Product::query()->truncate();
@@ -38,7 +38,7 @@ class ProductsSeeder extends Seeder
             }
         }
 
-        // 产品分类关联
+
         $categories = $this->getProductCategories();
         if ($categories) {
             ProductCategory::query()->truncate();
@@ -47,7 +47,7 @@ class ProductsSeeder extends Seeder
             }
         }
 
-        // 产品描述
+
         $descriptions = $this->getProductDescriptions();
         if ($descriptions) {
             ProductDescription::query()->truncate();
@@ -56,7 +56,7 @@ class ProductsSeeder extends Seeder
             }
         }
 
-        // 子商品SKU
+
         $skus = $this->getProductSkus();
         if ($skus) {
             ProductSku::query()->truncate();
@@ -69,7 +69,7 @@ class ProductsSeeder extends Seeder
             }
         }
 
-        // 相关产品
+
         ProductRelation::query()->truncate();
         $items = $this->getProductRelations();
         ProductRelation::query()->insert(

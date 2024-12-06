@@ -14,7 +14,7 @@ namespace Plugin\Openai\Libraries\OpenAI;
 class Chat extends Base
 {
     /**
-     * @var array 聊天上下文
+     * @var array
      */
     private array $messages;
 
@@ -43,7 +43,7 @@ class Chat extends Base
     }
 
     /**
-     * 发送请求到 OpenAI
+     *  OpenAI
      *
      * @return mixed
      * @throws \Exception

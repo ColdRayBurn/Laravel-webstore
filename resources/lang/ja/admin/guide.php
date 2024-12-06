@@ -11,7 +11,7 @@
  */
 
 return [
-    // 見出し
+
     'Heading_title' => '初心者ガイド',
 
     //タブ
@@ -22,7 +22,7 @@ return [
     'tab_payment_shipping' => '支払いと物流',
     'tab_mail'             => '設定メール',
 
-    //文章
+
     'text_extension'   => '拡張子',
     'text_success'     => '成功: 初心者ガイドが変更されました。 ',
     'text_edit'        => '初心者のための編集ガイド',

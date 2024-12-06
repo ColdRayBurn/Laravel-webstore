@@ -149,7 +149,7 @@
             </div>
             <div class="module-edit-group">
               <div class="module-edit-title">{{ __('admin/builder.text_address') }}</div>
-              {{-- <el-input placeholder="地址" size="small" v-model="form.content.contact.address"></el-input> --}}
+              {{-- <el-input placeholder="" size="small" v-model="form.content.contact.address"></el-input> --}}
               <text-i18n type="textarea" v-model="form.content.contact.address"></text-i18n>
             </div>
             <div class="module-edit-group">
@@ -190,12 +190,12 @@
       return obj;
     }
 
-    // iframe 操作
+
     var previewWindow = null;
     $('#preview-iframe').on('load', function(event) {
       previewWindow = document.getElementById("preview-iframe").contentWindow;
 
-      // 页面滚动到最底部
+
       $(previewWindow.document).ready(function() {
         previewWindow.scrollTo(0, $(previewWindow.document).height());
       });
@@ -213,7 +213,7 @@
       data: {
         form: @json($design_settings),
       },
-      // 侦听器
+
       watch: {
         form: {
           handler: function(val, oldVal) {
@@ -222,7 +222,7 @@
           deep: true,
         }
       },
-      // 组件方法
+
       methods: {
         footerUpdate: bk.debounce(function() {
           $http.post('design_footer/builder/preview', this.form, {hload: true}).then((res) => {

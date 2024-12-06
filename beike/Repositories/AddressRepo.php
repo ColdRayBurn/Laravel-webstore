@@ -16,7 +16,7 @@ use Beike\Models\Address;
 class AddressRepo
 {
     /**
-     * 创建一个address记录
+     * address
      * @param $data
      * @return mixed
      */
@@ -66,7 +66,7 @@ class AddressRepo
     }
 
     /**
-     * 获取某个客户地址列表
+     *
      *
      * @param $customer
      * @return mixed

@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
 class RmaReasonRepo
 {
     /**
-     * 创建一个记录
+     *
      * @param $data
      * @return Builder|Model
      */

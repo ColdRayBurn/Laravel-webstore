@@ -19,7 +19,7 @@ use Spatie\Permission\Models\Role;
 class AdminUserController extends Controller
 {
     /**
-     * 获取后台用户列表
+     *
      *
      * @return mixed
      */
@@ -35,7 +35,7 @@ class AdminUserController extends Controller
     }
 
     /**
-     * 创建后台管理员
+     *
      *
      * @param AdminUserRequest $request
      * @return array
@@ -48,7 +48,7 @@ class AdminUserController extends Controller
     }
 
     /**
-     * 更新后台管理员
+     *
      *
      * @param AdminUserRequest $request
      * @param int              $adminUserId

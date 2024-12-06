@@ -26,7 +26,7 @@ class FileManagerService
     }
 
     /**
-     * 获取某个目录下所有文件夹
+     *
      */
     public function getDirectories($baseFolder = '/'): array
     {
@@ -52,7 +52,7 @@ class FileManagerService
     }
 
     /**
-     * 获取某个目录下的文件和文件夹
+     *
      *
      * @param     $baseFolder
      * @param     $keyword
@@ -113,7 +113,7 @@ class FileManagerService
     }
 
     /**
-     * 创建目录
+     *
      * @param             $folderName
      * @throws \Exception
      */
@@ -128,7 +128,7 @@ class FileManagerService
     }
 
     /**
-     * 移动文件夹
+     *
      *
      * @param             $sourcePath
      * @param             $destPath
@@ -161,7 +161,7 @@ class FileManagerService
     }
 
     /**
-     * 批量移动图片文件
+     *
      *
      * @param $images
      * @param $destPath
@@ -196,7 +196,7 @@ class FileManagerService
     }
 
     /**
-     * 删除文件或文件夹
+     *
      *
      * @param             $filePath
      * @throws \Exception
@@ -216,7 +216,7 @@ class FileManagerService
     }
 
     /**
-     * 批量删除文件
+     *
      *
      * @param $basePath
      * @param $files
@@ -235,7 +235,7 @@ class FileManagerService
     }
 
     /**
-     * 修改文件夹或者文件名称
+     *
      *
      * @param             $originPath
      * @param             $newPath
@@ -262,7 +262,7 @@ class FileManagerService
     }
 
     /**
-     * 上传文件
+     *
      *
      * @param $file
      * @param $savePath
@@ -307,7 +307,7 @@ class FileManagerService
     }
 
     /**
-     * 处理文件夹
+     *
      *
      * @param $folderPath
      * @param $baseName
@@ -322,7 +322,7 @@ class FileManagerService
     }
 
     /**
-     * 检测是否含有子文件夹
+     *
      *
      * @param $folderPath
      * @return bool
@@ -341,7 +341,7 @@ class FileManagerService
     }
 
     /**
-     * 处理文件
+     *
      *
      * @param $filePath
      * @param $baseName

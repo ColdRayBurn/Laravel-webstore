@@ -47,7 +47,7 @@ Vue.component('module-editor-image100', {
 
 @push('footer')
   <script>
-    // 定义模块的配置项
+
     app.source.modules.push({
       title: '{{__('admin/app_builder.module_image')}}',
       code: 'image100',

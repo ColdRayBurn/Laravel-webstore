@@ -32,17 +32,17 @@ class StateMachineService
 
     private array $payment;
 
-    public const CREATED = 'created';                  // 已创建
+    public const CREATED = 'created';
 
-    public const UNPAID = 'unpaid';                    // 待支付
+    public const UNPAID = 'unpaid';
 
-    public const PAID = 'paid';                        // 已支付
+    public const PAID = 'paid';
 
-    public const SHIPPED = 'shipped';                  // 已发货
+    public const SHIPPED = 'shipped';
 
-    public const COMPLETED = 'completed';              // 已完成
+    public const COMPLETED = 'completed';
 
-    public const CANCELLED = 'cancelled';              // 已取消
+    public const CANCELLED = 'cancelled';
 
     public const ORDER_STATUS = [
         self::CREATED,
@@ -83,7 +83,7 @@ class StateMachineService
     }
 
     /**
-     * 设置订单备注
+     *
      * @param $comment
      * @return $this
      */
@@ -95,7 +95,7 @@ class StateMachineService
     }
 
     /**
-     * 设置是否通知
+     *
      * @param $flag
      * @return $this
      */
@@ -107,7 +107,7 @@ class StateMachineService
     }
 
     /**
-     * 设置发货信息
+     *
      *
      * @param array $shipment
      * @return $this
@@ -120,7 +120,7 @@ class StateMachineService
     }
 
     /**
-     * 设置支付信息
+     *
      *
      * @param array $payment
      * @return $this
@@ -133,7 +133,7 @@ class StateMachineService
     }
 
     /**
-     * 获取所有订单状态列表
+     *
      *
      * @return array
      * @throws \Exception
@@ -156,7 +156,7 @@ class StateMachineService
     }
 
     /**
-     * 获取所有有效订单状态(从订单已支付到订单已完成的所有状态)
+     * ()
      * @return string[]
      */
     public static function getValidStatuses(): array
@@ -171,7 +171,7 @@ class StateMachineService
     }
 
     /**
-     * 获取当前订单可以变为的状态
+     *
      *
      * @return array
      * @throws \Exception
@@ -237,7 +237,7 @@ class StateMachineService
     }
 
     /**
-     * 检测当前订单是否可以变更为某个状态
+     *
      *
      * @param             $statusCode
      * @throws \Exception
@@ -255,7 +255,7 @@ class StateMachineService
     }
 
     /**
-     * 获取状态机流程, 此处通过 filter hook 可以被外部插件修改
+     * ,  filter hook
      * @return mixed
      */
     private function getMachines()
@@ -271,7 +271,7 @@ class StateMachineService
     }
 
     /**
-     * 通过订单当前状态以及即将变为的状态获取需要触发的事件
+     *
      *
      * @param $oldStatus
      * @param $newStatus
@@ -285,7 +285,7 @@ class StateMachineService
     }
 
     /**
-     * 更新订单状态
+     *
      *
      * @param             $oldCode
      * @param             $newCode
@@ -298,7 +298,7 @@ class StateMachineService
     }
 
     /**
-     * 更新订单商品销量
+     *
      * @return void
      */
     private function updateSales()
@@ -313,7 +313,7 @@ class StateMachineService
     }
 
     /**
-     * 添加更改记录
+     *
      *
      * @param            $oldCode
      * @param            $newCode
@@ -331,7 +331,7 @@ class StateMachineService
     }
 
     /**
-     * 减扣库存
+     *
      *
      * @param $oldCode
      * @param $newCode
@@ -352,7 +352,7 @@ class StateMachineService
     }
 
     /**
-     * 添加发货单号
+     *
      */
     private function addShipment($oldCode, $newCode)
     {
@@ -372,7 +372,7 @@ class StateMachineService
     }
 
     /**
-     * 添加发货单号
+     *
      * @throws Throwable
      */
     private function addPayment($oldCode, $newCode)
@@ -384,7 +384,7 @@ class StateMachineService
     }
 
     /**
-     * 发送新订单通知
+     *
      */
     private function notifyNewOrder($oldCode, $newCode)
     {
@@ -395,7 +395,7 @@ class StateMachineService
     }
 
     /**
-     * 发送订单状态更新通知
+     *
      */
     private function notifyUpdateOrder($oldCode, $newCode)
     {
@@ -406,7 +406,7 @@ class StateMachineService
     }
 
     /**
-     * 恢复库存
+     *
      */
     private function revertStock($oldCode, $newCode)
     {

@@ -21,26 +21,26 @@ use Tests\Data\Admin\ProductPage;
 use Tests\Data\Catalog\IndexPage;
 use Tests\DuskTestCase;
 
-//修改商品分类
+
 class AlterCategoriesTest extends DuskTestCase
 {
     public function testAlterCategories()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit(AdminLoginPage::Admin_Login['login_url'])
-                //1.登录
+
                 ->type(AdminLoginPage::Admin_Login['login_email'], LoginData::Ture_Data['email'])
                 ->type(AdminLoginPage::Admin_Login['login_pwd'], LoginData::Ture_Data['password'])
                 ->press(AdminLoginPage::Admin_Login['login_btn'])
                 ->pause(2000)
-                //点击商品管理
+
                 ->click(AdminPage::TOP['mg_product'])
-                //点击商品分类
+
                 ->click(ProductPage::Product_Left['product_cate'])
                 ->pause(5000)
-                //点击编辑分类按钮
+
                 ->press(ProductPage::Cre_class['edit_cate_btn'])
-                //填写分类信息
+
                 ->type(CreCategoriesPage::Cate_Page['ch_name'], CreCategories::Alter_Cate_Data['ch_name'])
                 ->type(CreCategoriesPage::Cate_Page['en_name'], CreCategories::Alter_Cate_Data['en_name'])
                 ->type(CreCategoriesPage::Cate_Page['ch_content'], CreCategories::Alter_Cate_Data['ch_content'])
@@ -52,11 +52,11 @@ class AlterCategoriesTest extends DuskTestCase
                 ->type(CreCategoriesPage::Cate_Page['en_keywords'], CreCategories::Alter_Cate_Data['en_keywords'])
                 ->type(CreCategoriesPage::Cate_Page['ch_description'], CreCategories::Alter_Cate_Data['ch_description'])
                 ->type(CreCategoriesPage::Cate_Page['en_description'], CreCategories::Alter_Cate_Data['en_description'])
-                //点击启用
+
                 ->click(CreCategoriesPage::Cate_Page['status_enable'])
-                //点击保存
+
                 ->press(CreCategoriesPage::Cate_Page['save_btn'])
-            //跳转到前台并验证
+
                 ->click(AdminPage::TOP['root'])
                 ->pause(3000)
                 ->click(AdminPage::TOP['go_catalog'])

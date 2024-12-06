@@ -19,7 +19,7 @@ use Illuminate\Http\Request;
 class ForgottenController
 {
     /**
-     * 找回密码页面
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
@@ -28,7 +28,7 @@ class ForgottenController
     }
 
     /**
-     * 接收email地址，生成验证码发送到邮件地址
+     * email，
      * @param Request $request
      * @return array
      */
@@ -40,7 +40,7 @@ class ForgottenController
     }
 
     /**
-     * 接收验证码和新密码、确认密码，验证验证码是否正确、密码和确认密码是否相等，然后修改密码
+     * 、，、，
      * @param Request $request
      * @return array
      */

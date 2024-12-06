@@ -41,7 +41,7 @@ if (typeof Vue != 'undefined') {
       return asset + 'image/video-icon.png';
     }
 
-    // 判断 image 是否以 http 开头
+
     if (image.indexOf('http') === 0) {
       return image;
     }
@@ -85,7 +85,7 @@ const inputLocaleTranslate = () => {
       return layer.msg(lang.translate_form, () => {});
     }
 
-    // 发请求之前删除所有错样式
+
     $http.post('translation', {from, to, text}).then((res) => {
       $('.translation-error-text').remove()
 
@@ -175,21 +175,21 @@ const pageBottomBtns = () => {
   }
 }
 
-// 检查是否非法移除版权
+
 const checkRemoveCopyRight = () => {
   let isRemove = false;
 
-  // 被注释或删除
+
   if (!$('#copyright-text').length) {
     isRemove = true;
   }
 
-  // 被隐藏
+
   if ($('#copyright-text').css('display') === 'none') {
     isRemove = true;
   }
 
-  // 被去除版权中 BeikeShop 文字
+
   if ($('#copyright-text').text().indexOf('BeikeShop') === -1) {
     isRemove = true;
   }

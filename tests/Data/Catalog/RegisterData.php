@@ -11,7 +11,7 @@ class RegisterData
     ];
 
     public const False_Register = [
-        'exist_email'    => 'test@163.com',  //已注册的email
+        'exist_email'    => 'test@163.com',
         'illegal_email'  => 'test',
         'false_password' => '1234567',
         'false_assert'   => 'User login and registration',

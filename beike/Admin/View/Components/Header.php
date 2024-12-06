@@ -40,7 +40,7 @@ class Header extends Component
     }
 
     /**
-     * 常用功能链接
+     *
      */
     private function getCommonLinks()
     {
@@ -64,7 +64,7 @@ class Header extends Component
     }
 
     /**
-     * 处理最近访问链接
+     *
      */
     private function handleHistoryLinks(): array
     {
@@ -111,7 +111,7 @@ class Header extends Component
     }
 
     /**
-     * 从 session 获取最近访问的链接
+     *  session
      *
      * @return array
      */

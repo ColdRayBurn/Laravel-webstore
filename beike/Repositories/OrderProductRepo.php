@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\Model;
 class OrderProductRepo
 {
     /**
-     * 创建商品明细
+     *
      *
      * @param Order $order
      * @param       $cartProducts
@@ -50,7 +50,7 @@ class OrderProductRepo
     }
 
     /**
-     * 查找单条商品明细数据
+     *
      *
      * @param $id
      * @return Builder|Builder[]|Collection|Model|null

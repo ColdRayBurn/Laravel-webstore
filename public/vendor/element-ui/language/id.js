@@ -50,7 +50,7 @@
         month10: 'Oktober',
         month11: 'November',
         month12: 'Desember',
-        // week: '周次',
+
         weeks: {
           sun: 'hari',
           mon: 'satu',

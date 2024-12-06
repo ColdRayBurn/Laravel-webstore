@@ -30,7 +30,7 @@ class CheckoutController extends Controller
     }
 
     /**
-     * 更改结算信息
+     *
      *
      * @param Request $request
      * @return mixed
@@ -49,7 +49,7 @@ class CheckoutController extends Controller
     }
 
     /**
-     * 确认提交订单
+     *
      *
      * @return mixed
      * @throws \Throwable

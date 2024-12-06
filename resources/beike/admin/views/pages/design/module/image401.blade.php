@@ -66,7 +66,7 @@ Vue.component('module-editor-image401', {
   <script>
     register = @json($register);
 
-    // 定义模块的配置项
+
     register.make = {
       style: {
         background_color: ''

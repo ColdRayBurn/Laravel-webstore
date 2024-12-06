@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\DB;
 class OrderReportRepo
 {
     /**
-     * 获取最近一个月每日销售订单数
+     *
      * @return mixed
      */
     public static function getLatestMonth($statuses = [])
@@ -65,7 +65,7 @@ class OrderReportRepo
     }
 
     /**
-     * 获取最近一周每日销售订单数
+     *
      */
     public static function getLatestWeek($statuses = [])
     {
@@ -104,7 +104,7 @@ class OrderReportRepo
     }
 
     /**
-     * 获取最近一年每月销售订单数
+     *
      */
     public static function getLatestYear($statuses = [])
     {
@@ -193,7 +193,7 @@ class OrderReportRepo
     }
 
     /**
-     * 获取所有商品的浏览数量列表
+     *
      * @return \Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection
      */
     public static function getProductViews()
@@ -209,7 +209,7 @@ class OrderReportRepo
     }
 
     /**
-     * 获取最近一个月的按天浏览数量统计表。 $productId有值则只统计该商品的浏览数量，不传则统计所有商品的浏览数量
+     * 。 $productId，
      * @param $productId
      * @return array
      */
@@ -244,7 +244,7 @@ class OrderReportRepo
     }
 
     /**
-     * 获取最近一周的按天浏览数量统计表。 $productId有值则只统计该商品的浏览数量，不传则统计所有商品的浏览数量
+     * 。 $productId，
      * @param $productId
      * @return array
      */
@@ -279,7 +279,7 @@ class OrderReportRepo
     }
 
     /**
-     * 获取最近一年的按月浏览数量统计表。 $productId有值则只统计该商品的浏览数量，不传则统计所有商品的浏览数量
+     * 。 $productId，
      * @param $productId
      * @return array
      */

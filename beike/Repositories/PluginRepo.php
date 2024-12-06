@@ -37,7 +37,7 @@ class PluginRepo
     }
 
     /**
-     * 安装插件到系统: 插入数据
+     * :
      * @param  BPlugin    $bPlugin
      * @throws \Exception
      */
@@ -64,7 +64,7 @@ class PluginRepo
     }
 
     /**
-     * 发布静态资源到 public
+     *  public
      * @param BPlugin $bPlugin
      */
     public static function publishStaticFiles(BPlugin $bPlugin)
@@ -141,7 +141,7 @@ class PluginRepo
     }
 
     /**
-     * 数据库迁移
+     *
      */
     public static function migrateDatabase(BPlugin $bPlugin)
     {
@@ -162,7 +162,7 @@ class PluginRepo
     }
 
     /**
-     * 从系统卸载插件: 删除数据
+     * :
      * @param BPlugin $bPlugin
      */
     public static function uninstallPlugin(BPlugin $bPlugin)
@@ -177,7 +177,7 @@ class PluginRepo
     }
 
     /**
-     * 从 public 删除静态资源
+     *  public
      * @param BPlugin $bPlugin
      */
     public static function removeStaticFiles(BPlugin $bPlugin)
@@ -191,7 +191,7 @@ class PluginRepo
     }
 
     /**
-     * 数据库回滚
+     *
      */
     public static function rollbackDatabase(BPlugin $bPlugin)
     {
@@ -212,7 +212,7 @@ class PluginRepo
     }
 
     /**
-     * 判断插件是否安装
+     *
      *
      * @param $code
      * @return bool
@@ -225,7 +225,7 @@ class PluginRepo
     }
 
     /**
-     * 判断插件是否安装
+     *
      *
      * @param $code
      * @return bool
@@ -238,7 +238,7 @@ class PluginRepo
     }
 
     /**
-     * 获取所有已安装插件列表
+     *
      *
      * @return Plugin[]|Collection
      */
@@ -252,7 +252,7 @@ class PluginRepo
     }
 
     /**
-     * 获取所有已安装插件
+     *
      * @return Plugin[]|Collection
      */
     public static function getPluginsByCode(): Collection|array
@@ -263,7 +263,7 @@ class PluginRepo
     }
 
     /**
-     * 获取所有配送方式
+     *
      */
     public static function getShippingMethods(): Collection
     {
@@ -280,7 +280,7 @@ class PluginRepo
     }
 
     /**
-     * 获取所有支付方式
+     *
      */
     public static function getPaymentMethods(): Collection
     {
@@ -330,7 +330,7 @@ class PluginRepo
     }
 
     /**
-     * 检测对应配送方式是否可用
+     *
      *
      * @param $code
      * @return bool
@@ -344,7 +344,7 @@ class PluginRepo
     }
 
     /**
-     * 检测对应支付方式是否可用
+     *
      *
      * @param $code
      * @return bool

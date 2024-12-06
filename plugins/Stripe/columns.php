@@ -1,6 +1,6 @@
 <?php
 /**
- * Stripe 字段
+ * Stripe
  *
  * @copyright  2022 beikeshop.com - All Rights Reserved
  * @link       https://beikeshop.com

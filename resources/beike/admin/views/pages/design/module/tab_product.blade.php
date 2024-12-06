@@ -165,7 +165,7 @@ Vue.component('module-editor-tab-product', {
   <script>
     register = @json($register);
 
-    // 定义模块的配置项
+
     register.make = {
       style: {
         background_color: ''

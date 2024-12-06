@@ -7,12 +7,12 @@
  */
 
 $(function () {
-  // 响应式下弹窗菜单交互
+
   $(document).on("click", ".mobile-open-menu", function () {
     $('.sidebar-box').toggleClass('active');
   });
 
-  // 点击 sidebar-box 内 除 sidebar-info 以外的地方关闭弹窗
+
   $('.sidebar-box').on("click", function (e) {
     if (!$(e.target).parents(".sidebar-info").length) {
       $(".sidebar-box").removeClass("active");
@@ -36,12 +36,12 @@ $(function () {
   $('#header-search-input').on("keyup", function (key) {
     const val = $(this).val();
 
-    // 排除方向键
+
     if (key.keyCode == 38 || key.keyCode == 40 || key.keyCode == 37 || key.keyCode == 39) {
       return;
     }
 
-    // 回车键
+
     if (key.keyCode == 13) {
       const $activeItem = $('.dropdown-search .common-links .dropdown-item.active');
       if ($activeItem.length) {
@@ -120,7 +120,7 @@ $(function () {
     })
   }
 
-  // 点击 search-wrap 以外的地方关闭搜索框
+
   $(document).on("click", function (e) {
     if (!$(e.target).parents(".search-wrap").length) {
       $(".search-wrap .input-wrap").removeClass("active");

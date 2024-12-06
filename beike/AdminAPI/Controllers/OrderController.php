@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 class OrderController
 {
     /**
-     * 获取订单列表
+     *
      *
      * @param Request $request
      * @return mixed
@@ -36,7 +36,7 @@ class OrderController
     }
 
     /**
-     * 查看单个订单
+     *
      *
      * @param Request $request
      * @param Order   $order
@@ -53,7 +53,7 @@ class OrderController
     }
 
     /**
-     * 更新订单状态,添加订单更新日志
+     * ,
      *
      * @param Request $request
      * @param Order   $order
@@ -79,7 +79,7 @@ class OrderController
     }
 
     /**
-     * 更新发货信息
+     *
      */
     public function updateShipment(Request $request, Order $order, int $orderShipmentId): JsonResponse
     {

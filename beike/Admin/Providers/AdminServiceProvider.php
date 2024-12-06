@@ -81,7 +81,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载后台命令行脚本
+     *
      */
     protected function loadCommands()
     {
@@ -100,7 +100,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * 注册后台用户 guard
+     *  guard
      */
     protected function registerGuard()
     {
@@ -116,7 +116,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载主题模板, 用于装修预览
+     * ,
      */
     protected function loadThemeViewPath()
     {
@@ -132,7 +132,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * 后台UI组件
+     * UI
      */
     protected function loadAdminViewComponents()
     {
@@ -153,7 +153,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * seeder 数据
+     * seeder
      */
     protected function publishResources()
     {
@@ -163,7 +163,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * 加载首页 page builder 相关组件
+     *  page builder
      *
      * @throws \Exception
      */
@@ -189,7 +189,7 @@ class AdminServiceProvider extends ServiceProvider
     }
 
     /**
-     * 后台公共数据
+     *
      */
     protected function loadShareViewData()
     {

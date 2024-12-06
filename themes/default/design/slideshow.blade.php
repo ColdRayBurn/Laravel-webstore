@@ -25,18 +25,18 @@
   <script>
     function slideshowSwiper() {
       new Swiper ('.module-swiper-{{ $module_id }}', {
-        loop: '{{ count($content['images']) > 1 ? true : false }}', // 循环模式选项
+        loop: '{{ count($content['images']) > 1 ? true : false }}',
         autoplay: true,
         pauseOnMouseEnter: true,
         clickable :true,
 
-        // 如果需要分页器
+
         pagination: {
           el: '.slideshow-pagination-{{ $module_id }}',
           clickable :true
         },
 
-        // 如果需要前进后退按钮
+
         navigation: {
           nextEl: '.slideshow-btnnext-{{ $module_id }}',
           prevEl: '.slideshow-btnprev-{{ $module_id }}',

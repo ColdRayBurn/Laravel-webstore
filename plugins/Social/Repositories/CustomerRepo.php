@@ -22,7 +22,7 @@ use Plugin\Social\Models\CustomerSocial;
 class CustomerRepo
 {
     /**
-     * 允许的第三方服务
+     *
      */
     private const PROVIDERS = [
         'facebook',
@@ -44,7 +44,7 @@ class CustomerRepo
     }
 
     /**
-     * 创建客户, 关联第三方用户数据
+     * ,
      *
      * @param       $provider
      * @param array $userData
@@ -104,7 +104,7 @@ class CustomerRepo
     }
 
     /**
-     * 通过 provider 和 user_id 获取已存在 social
+     *  provider  user_id  social
      * @param $provider
      * @param $userId
      * @return Model|Builder|null

@@ -15,14 +15,14 @@ const instance = axios.create({
   headers: {'X-CSRF-TOKEN': token},
 });
 
-axios.defaults.timeout = 0; // 请求超时
+axios.defaults.timeout = 0;
 // axios.defaults.baseURL = process.env.NODE_ENV == 'production' ? process.env.VUE_APP_BASE_URL + '/' : '/';
 // console.log(process.env.VUE_APP_BASE_URL)
 axios.defaults.baseURL = base;
 export default {
   /**
-   * get 请求
-   * @param url 接口路由
+   * get
+   * @param url
    * @returns {AxiosPromise<any>}
    */
   get (url, params, {hmsg, hload, base}={}) {
@@ -30,10 +30,10 @@ export default {
   },
 
   /**
-   * post 请求
+   * post
    *
-   * @param url 接口路由
-   * @param params 接口参数
+   * @param url
+   * @param params
    * @returns {AxiosPromise<any>}
    */
 
@@ -42,7 +42,7 @@ export default {
   },
 
   /**
-  * delete 方法封装
+  * delete
   * @param url
   * @param params
   * @returns {Promise}
@@ -53,7 +53,7 @@ export default {
   },
 
   /**
-  * put 方法封装
+  * put
   * @param url
   * @param params
   * @returns {Promise}
@@ -65,14 +65,14 @@ export default {
 
 
   /**
-   * 网络请求
-   * @param method 方法
-   * @param url 接口地址
-   * @param params 参数
-   * @param showError 是否展示错误信息
+   *
+   * @param method
+   * @param url
+   * @param params
+   * @param showError
    * @returns {Promise<any>}
    */
-  // 错误和失败信息都在这里进行处理，界面中调用的时候只处理正确数据即可
+
   request(method, url, params = {}, {hmsg, hload, base} = {}) {
     if (!hload) {
       layer.load(2, {shade: [0.3,'#fff'] })
@@ -86,7 +86,7 @@ export default {
       axios({method: method, url: url, [method == 'get' ? 'params' : 'data']: params}).then((res) => {
         if (res) {
           resolve(res.data);
-        } else { // 其他情况返回错误信息，根据需要处理
+        } else {
           reject(res.data);
           if (!hmsg) return layer.msg(res.data.message, ()=>{});
         }
