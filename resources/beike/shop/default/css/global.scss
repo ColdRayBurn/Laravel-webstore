@@ -39,7 +39,7 @@ body.app {
 }
 
 @font-face {font-family: 'Poppins';
-  src: url('/fonts/poppins/Poppins-Regular.ttf') format("truetype");
+  src: url('/fonts/inter/Inter_28pt-Regular.ttf') format("truetype");
   font-style: normal;
   font-weight: 500;
   font-weight: normal;
@@ -47,14 +47,14 @@ body.app {
 }
 
 @font-face {font-family: 'Poppins';
-  src: url('/fonts/poppins/Poppins-Medium.ttf') format("truetype");
+  src: url('/fonts/inter/Inter_28pt-Medium.ttf') format("truetype");
   font-style: normal;
   font-display: swap;
   font-weight: 600;
 }
 
 @font-face {font-family: 'Poppins';
-  src: url('/fonts/poppins/Poppins-SemiBold.ttf') format("truetype");
+  src: url('/fonts/inter/Inter_28pt-SemiBold.ttf') format("truetype");
   font-style: normal;
   font-display: swap;
   font-weight: 700;
@@ -171,7 +171,7 @@ img {
     content: '';
     width: 60px;
     height: 1px;
-    background: #FD560F;
+    background: #007acc;
   }
 }
 
