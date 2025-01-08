@@ -10,8 +10,6 @@
 
 This website is a custom-built e-commerce platform tailored to meet specific client requirements. Starting from a robust open-source template, our team redesigned and redeveloped the platform to align with the client’s vision and operational needs. The result is a modern, efficient, and scalable solution, optimized for user experience and business performance.
 
----
-
 ### **Features and Capabilities**
 
 - **Custom Design**: A unique, user-friendly interface built to enhance customer engagement and reflect the client’s brand identity.
@@ -21,8 +19,6 @@ This website is a custom-built e-commerce platform tailored to meet specific cli
 - **Responsive Design**: Optimized for desktop, tablet, and mobile users.
 - **Enhanced Admin Tools**: Intuitive backend for managing products, orders, and customer interactions.
 
----
-
 ### **Technology Stack**
 
 - **Backend**: PHP 8.1 with Laravel Framework 10
@@ -31,14 +27,10 @@ This website is a custom-built e-commerce platform tailored to meet specific cli
 - **Server**: Apache 2.4+ or Nginx 1.10+
 - **Environment**: CentOS 7+ or Ubuntu 20.04+
 
----
-
 ## **Preview**
 Below is a screenshot of the redesigned e-commerce platform:
 
 ![Website Screenshot](https://all4it.org/storage/eshop.jpg "Website Screenshot")
-
----
 
 ### **How It Was Built**
 
@@ -48,7 +40,6 @@ Below is a screenshot of the redesigned e-commerce platform:
 4. **Security Enhancements**: The platform was fortified against common vulnerabilities, ensuring data safety for both the client and customers.
 5. **Brand Integration**: The design and content were customized to align with the client’s branding and marketing strategy.
 
----
 
 ## **Installation and Deployment**
 
@@ -59,11 +50,8 @@ Below is a screenshot of the redesigned e-commerce platform:
 4. Set the `.env` file with database and environment configurations.
 5. Deploy to your web server and set the `public` directory as the webroot.
 
----
 ## **Contact Us**
 
 Interested in building your custom e-commerce solution? Contact our team for a consultation and let’s create something exceptional together!
 
 ## 💼 [Mail us](mailto:info@all4it.org) | 🌐 [Our web-site](https://all4it.org/)
-
----
